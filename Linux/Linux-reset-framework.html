@@ -1,0 +1,1214 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux-reset-framework · Notes</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Liyi">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Linux-device-model.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ROS/">
+            
+                <a href="../ROS/">
+            
+                    
+                    ROS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ROS/ROS开发环境.html">
+            
+                <a href="../ROS/ROS开发环境.html">
+            
+                    
+                    ROS开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ROS/二进制包和源码包.html">
+            
+                <a href="../ROS/二进制包和源码包.html">
+            
+                    
+                    二进制包和源码包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ROS/ROS工作空间.html">
+            
+                <a href="../ROS/ROS工作空间.html">
+            
+                    
+                    ROS工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ROS/packages.html">
+            
+                <a href="../ROS/packages.html">
+            
+                    
+                    packages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../ROS/package.xml.html">
+            
+                <a href="../ROS/package.xml.html">
+            
+                    
+                    package.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../ROS/CMakeLists.txt.html">
+            
+                <a href="../ROS/CMakeLists.txt.html">
+            
+                    
+                    CMakeLists.txt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../ROS/ROS通信架构.html">
+            
+                <a href="../ROS/ROS通信架构.html">
+            
+                    
+                    ROS通信架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../ROS/Launch文件.html">
+            
+                <a href="../ROS/Launch文件.html">
+            
+                    
+                    Launch文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../ROS/Topic和msg.html">
+            
+                <a href="../ROS/Topic和msg.html">
+            
+                    
+                    Topic和msg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../ROS/Service和srv.html">
+            
+                <a href="../ROS/Service和srv.html">
+            
+                    
+                    Service和srv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../ROS/Action.html">
+            
+                <a href="../ROS/Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../ROS/Parameter-server.html">
+            
+                <a href="../ROS/Parameter-server.html">
+            
+                    
+                    Parameter server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../ROS/roscpp.html">
+            
+                <a href="../ROS/roscpp.html">
+            
+                    
+                    roscpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../ROS/init以及NodeHandle.html">
+            
+                <a href="../ROS/init以及NodeHandle.html">
+            
+                    
+                    init以及NodeHandle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../ROS/topic-in-roscpp.html">
+            
+                <a href="../ROS/topic-in-roscpp.html">
+            
+                    
+                    topic in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../ROS/service-in-roscpp.html">
+            
+                <a href="../ROS/service-in-roscpp.html">
+            
+                    
+                    service in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../ROS/param-in-roscpp.html">
+            
+                <a href="../ROS/param-in-roscpp.html">
+            
+                    
+                    param in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../ROS/命名空间.html">
+            
+                <a href="../ROS/命名空间.html">
+            
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../ROS/roscpp时钟.html">
+            
+                <a href="../ROS/roscpp时钟.html">
+            
+                    
+                    roscpp时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="../ROS/日志和异常.html">
+            
+                <a href="../ROS/日志和异常.html">
+            
+                    
+                    日志和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../ROS/rospy.html">
+            
+                <a href="../ROS/rospy.html">
+            
+                    
+                    rospy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../ROS/TF-坐标转换.html">
+            
+                <a href="../ROS/TF-坐标转换.html">
+            
+                    
+                    TF 坐标转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../ROS/TF-in-roscpp.html">
+            
+                <a href="../ROS/TF-in-roscpp.html">
+            
+                    
+                    TF in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    RZG2L-关于sci(f)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="RZG2L-GPT.html">
+            
+                <a href="RZG2L-GPT.html">
+            
+                    
+                    RZG2L-GPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="RZG2L-IPC.html">
+            
+                <a href="RZG2L-IPC.html">
+            
+                    
+                    RZG2L-IPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="RZG2L-Camera.html">
+            
+                <a href="RZG2L-Camera.html">
+            
+                    
+                    RZG2L-Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Auth.html">
+            
+                <a href="Auth.html">
+            
+                    
+                    Auth UID加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="Linux-device-model.html">
+            
+                <a href="Linux-device-model.html">
+            
+                    
+                    Linux-device-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.7" data-path="Linux-reset-framework.html">
+            
+                <a href="Linux-reset-framework.html">
+            
+                    
+                    Linux-reset-framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux-reset-framework</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux-reset-framework">Linux reset framework</h1>
+<ul>
+<li><a href="#1-&#x95EE;&#x9898;">1. &#x95EE;&#x9898;</a></li>
+<li><a href="#2-linux-reset-framework">2. linux reset framework</a><ul>
+<li><a href="#21-&#x5BF9;&#x4E8E;provider">2.1. &#x5BF9;&#x4E8E;provider</a></li>
+<li><a href="#22-&#x5BF9;&#x4E8E;consumer">2.2. &#x5BF9;&#x4E8E;consumer</a></li>
+<li><a href="#23-&#x9644;">2.3. &#x9644;</a></li>
+</ul>
+</li>
+<li><a href="#3-&#x5206;&#x6790;">3. &#x5206;&#x6790;</a></li>
+<li><a href="#4-call-trace">4. Call trace</a><ul>
+<li><a href="#41-devm_reset_control_getdev-id">4.1. devm_reset_control_get(dev, id)</a></li>
+<li><a href="#42-devm_reset_control_get_exclusive">4.2. devm_reset_control_get_exclusive()</a></li>
+<li><a href="#43-__devm_reset_control_getdev-id-index-shared-optional">4.3. __devm_reset_control_get(dev, id, index, shared, optional)</a></li>
+<li><a href="#44-__reset_control_get">4.4. __reset_control_get</a></li>
+<li><a href="#45-__of_reset_control_getpdev-devof_node-null-0-false-false">4.5. __of_reset_control_get(pdev-&gt;dev.of_node, NULL, 0, false, false)</a><ul>
+<li><a href="#451-&#x5173;&#x4E8E;of_parse_phandle_with_args">4.5.1. &#x5173;&#x4E8E;<code>of_parse_phandle_with_args()</code></a></li>
+</ul>
+</li>
+<li><a href="#46-__reset_control_get_internalrcdev-index-shared">4.6. __reset_control_get_internal(rcdev, index, shared)</a></li>
+</ul>
+</li>
+<li><a href="#5-&#x7ED3;&#x8BBA;">5. &#x7ED3;&#x8BBA;</a></li>
+<li><a href="#6-&#x53C2;&#x8003;">6. &#x53C2;&#x8003;</a></li>
+</ul>
+<h2 id="1-&#x95EE;&#x9898;">1. &#x95EE;&#x9898;</h2>
+<p>gpt3&#x548C;gpt6&#x540C;&#x65F6;&#x6253;&#x5F00;&#xFF0C;&#x5185;&#x6838;&#x542F;&#x52A8;&#x9636;&#x6BB5;&#x4F1A;&#x62A5;&#x9519;failed to get cpg reset</p>
+<pre><code class="lang-log">[root@okg2l ~ ]# dmesg |grep gpt
+[    0.090055] gpt-rzg2l 10048300.gpt: RZ/G2L GPT Driver probed
+[    0.090361]  rzg2l_gpt_probe+0x90/0x378
+[    0.090409]  rzg2l_gpt_driver_init+0x18/0x20
+[    0.090453] gpt-rzg2l 10048600.gpt: failed to get cpg reset
+[    0.090506] gpt-rzg2l: probe of 10048600.gpt failed with error -16
+</code></pre>
+<p>&#x9519;&#x8BEF;-16 <code>#define EBUSY 16 /* Device or resource busy */</code></p>
+<p>&#x5728;<code>drivers/pwm/gpt-rzg2l.c</code>&#x7684;<code>rzg2l_gpt_probe</code>&#x51FD;&#x6570;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x5173;&#x4E8E;cpg&#x7684;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
+<p>&#x5728;probe&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x7533;&#x8BF7;rstc&#xFF0C;&#x5373;&#x590D;&#x4F4D;&#x63A7;&#x5236;&#x5668;&#x8D44;&#x6E90;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x53EA;&#x6709;&#x7B2C;&#x4E00;&#x6B21;gpt3&#x80FD;&#x6210;&#x529F;&#x83B7;&#x53D6;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;gpt6&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;</p>
+<h2 id="2-linux-reset-framework">2. linux reset framework</h2>
+<p>soc&#x5185;&#x90E8;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x72EC;&#x7ACB;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x6BD4;&#x5982;&#x4E32;&#x53E3;&#xFF0C;&#x5B9A;&#x65F6;&#x5668;&#xFF0C;spi&#x7B49;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E9B;&#x5916;&#x8BBE;&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x7528;&#x5230;&#x590D;&#x4F4D;&#x4FE1;&#x53F7;&#xFF0C;&#x8F6F;&#x4EF6;&#x901A;&#x8FC7;&#x64CD;&#x4F5C;&#x67D0;&#x4E9B;&#x5BC4;&#x5B58;&#x5668;&#xFF08;&#x4E00;&#x822C;&#x4E00;&#x4E2A;&#x5916;&#x8BBE;&#x5BF9;&#x5E94;1bit&#xFF09;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x5BF9;&#x5916;&#x8BBE;&#x7684;&#x590D;&#x4F4D;&#x3002;</p>
+<p>kernel&#x5185;&#x62BD;&#x8C61;&#x4E86;&#x4E00;&#x4E2A;reset framework&#xFF0C;&#x7ED9;reset&#x7684;provider&#x63D0;&#x4F9B;&#x4E86;&#x7EDF;&#x4E00;&#x7684;reset&#x8D44;&#x6E90;&#x7684;&#x7BA1;&#x7406;&#x624B;&#x6BB5;&#xFF0C;&#x4E3A;reset&#x7684;consumer&#x63D0;&#x4F9B;&#x4FBF;&#x6377;&#x3001;&#x7EDF;&#x4E00;&#x7684;&#x590D;&#x4F4D;&#x63A7;&#x5236;API&#x3002;</p>
+<h3 id="21-&#x5BF9;&#x4E8E;provider">2.1. &#x5BF9;&#x4E8E;provider</h3>
+<p>&#x63A5;&#x53E3;&#x5728;<code>include/linux/reset-controller.h</code></p>
+<p>&#x4E3B;&#x8981;&#x662F;&#x6784;&#x5EFA;<code>struct reset_controller_dev</code>&#x7ED3;&#x6784;&#x4F53;</p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct reset_controller_dev - reset controller entity that might
+ *                               provide multiple reset controls
+ * @ops: a pointer to device specific struct reset_control_ops
+ * @owner: kernel module of the reset controller driver
+ * @list: internal list of reset controller devices
+ * @reset_control_head: head of internal list of requested reset controls
+ * @dev: corresponding driver model device struct
+ * @of_node: corresponding device tree node as phandle target
+ * @of_reset_n_cells: number of cells in reset line specifiers
+ * @of_xlate: translation function to translate from specifier as found in the
+ *            device tree to id as given to the reset control ops
+ * @nr_resets: number of reset controls in this reset controller device
+ */</span>
+<span class="hljs-keyword">struct</span> reset_controller_dev {
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> reset_control_ops *ops;
+  <span class="hljs-keyword">struct</span> module *owner;
+  <span class="hljs-keyword">struct</span> list_head <span class="hljs-built_in">list</span>;
+  <span class="hljs-keyword">struct</span> list_head reset_control_head;
+  <span class="hljs-keyword">struct</span> device *dev;
+  <span class="hljs-keyword">struct</span> device_node *of_node;
+  <span class="hljs-keyword">int</span> of_reset_n_cells;
+  <span class="hljs-keyword">int</span> (*of_xlate)(<span class="hljs-keyword">struct</span> reset_controller_dev *rcdev,
+      <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> of_phandle_args *reset_spec);
+  <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> nr_resets;
+};
+</code></pre>
+<p>&#x7136;&#x540E;&#x8C03;&#x7528;&#x76F8;&#x5E94;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;reset&#x8BBE;&#x5907;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">reset_controller_register</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_controller_dev *rcdev)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reset_controller_unregister</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_controller_dev *rcdev)</span></span>;
+
+<span class="hljs-keyword">struct</span> device;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">devm_reset_controller_register</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> device *dev,
+           <span class="hljs-keyword">struct</span> reset_controller_dev *rcdev)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reset_controller_add_lookup</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_control_lookup *lookup,
+         <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> num_entries)</span></span>;
+</code></pre>
+<h3 id="22-&#x5BF9;&#x4E8E;consumer">2.2. &#x5BF9;&#x4E8E;consumer</h3>
+<p>&#x63A5;&#x53E3;&#x5728;<code>include/linux/reset.h</code></p>
+<p>consumer&#x8BBE;&#x5907;&#x5728;&#x81EA;&#x5DF1;&#x7684;dts node&#x4E2D;&#x4F7F;&#x7528;<code>resets</code>&#x3001;<code>reset-names</code>&#x7B49;&#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E;&#x6240;&#x9700;&#x7684;reset&#x8D44;&#x6E90;&#x3002;resets&#x5C5E;&#x6027;&#x7684;&#x5177;&#x4F53;&#x683C;&#x5F0F;&#x7531;provider&#x51B3;&#x5B9A;</p>
+<pre><code class="lang-c">device {
+  resets = &lt;&amp;rst <span class="hljs-number">20</span>&gt;;
+  reset-names = <span class="hljs-string">&quot;reset&quot;</span>;
+};
+</code></pre>
+<p>consumer driver&#x5728;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5148;&#x83B7;&#x53D6;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;reset&#x8D44;&#x6E90;<code>rstc</code></p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">inline</span> <span class="hljs-keyword">struct</span> reset_control *<span class="hljs-title">devm_reset_control_get</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id)</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">inline</span> <span class="hljs-keyword">struct</span> reset_control *<span class="hljs-title">devm_reset_control_get_shared</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id)</span>
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">inline</span> <span class="hljs-keyword">struct</span> reset_control *<span class="hljs-title">devm_reset_control_get_optional</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id)</span>
+</span></code></pre>
+<p>&#x83B7;&#x53D6;&#x5230;<code>rstc</code>&#x4E4B;&#x540E;&#x5373;&#x53EF;&#x8C03;&#x7528;API&#x590D;&#x4F4D;&#x8BBE;&#x5907;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">reset_control_reset</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_control *rstc)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">reset_control_assert</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_control *rstc)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">reset_control_deassert</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_control *rstc)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">reset_control_status</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> reset_control *rstc)</span></span>;
+</code></pre>
+<h3 id="23-&#x9644;">2.3. &#x9644;</h3>
+<ul>
+<li>&#x5728;linux reset framework&#x4E2D;&#xFF0C;&#x6BCF;&#x4E2A;reset_controller_dev&#x90FD;&#x7EF4;&#x62A4;&#x7740;&#x4E00;&#x4E2A;&#x94FE;&#x8868;&#xFF0C;&#x8FD9;&#x4E2A;&#x94FE;&#x8868;&#x91CC;&#x5B58;&#x653E;&#x7684;&#x662F;&#x7CFB;&#x7EDF;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x88AB;&#x7533;&#x8BF7;&#x7684;reset&#x8D44;&#x6E90;</li>
+<li>&#x6BCF;&#x4E00;&#x4E2A;&#x5916;&#x8BBE;&#x5BF9;&#x5E94;&#x7684;&#x590D;&#x4F4D;&#x63A7;&#x5236;&#x76F8;&#x5173;&#x5BC4;&#x5B58;&#x5668;&#x90FD;&#x662F;&#x4E00;&#x4E2A;reset&#x8D44;&#x6E90;<ul>
+<li>reset&#x8D44;&#x6E90;&#x4F53;&#x73B0;&#x4E3A;<code>struct reset_control *rstc</code></li>
+</ul>
+</li>
+<li>kernel&#x628A;&#x82AF;&#x7247;&#x4E0A;&#x6240;&#x6709;&#x7684;reset&#x8D44;&#x6E90;&#x7EDF;&#x4E00;&#x4EA4;&#x7531;reset_controller_dev&#x7BA1;&#x7406;</li>
+<li><code>include/dt-bindings/clock/r9a07g044l-cpg.h</code>&#x5B9A;&#x4E49;&#x4E86;rzg2l&#x82AF;&#x7247;&#x7684;&#x6240;&#x6709;reset&#x8D44;&#x6E90;</li>
+</ul>
+<p>&#x4F8B;&#x5982;&#x82AF;&#x7247;&#x624B;&#x518C; <code>7.2.4.121 Reset Control Register GPT (CPG_RST_GPT)</code></p>
+<p><img src="imgs/CPG_RST_GPT.png" alt="CPG_RST_GPT.png"></p>
+<p>&#x5BF9;&#x4E8E;gpt&#x6765;&#x8BF4;&#xFF0C;gpt01234567&#x5171;&#x7528;&#x4E00;&#x4E2A;&#x590D;&#x4F4D;&#x4FE1;&#x53F7;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x5171;&#x6709;1&#x4E2A;reset&#x8D44;&#x6E90;&#xFF0C;&#x5728;<code>r9a07g044l-cpg.h</code>&#x4E2D;&#x6709;&#x76F8;&#x5E94;&#x5B9A;&#x4E49;</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_GPT    6</span>
+</code></pre>
+<p>&#x82AF;&#x7247;&#x624B;&#x518C; <code>7.2.4.138 Reset Control Register SCIF (CPG_RST_SCIF)</code>&#x662F;&#x4E32;&#x53E3;scif&#x7684;&#x590D;&#x4F4D;&#x76F8;&#x5173;&#x5BC4;&#x5B58;&#x5668;</p>
+<p><img src="imgs/CPG_RST_GPT.png" alt="CPG_RST_GPT.png"></p>
+<p>&#x5BF9;&#x4E8E;scif&#x6765;&#x8BF4;&#xFF0C;scif01234&#xFF0C;&#x6BCF;&#x4E00;&#x8DEF;&#x4E32;&#x53E3;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x590D;&#x4F4D;&#x4FE1;&#x53F7;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x5171;&#x6709;5&#x4E2A;reset&#x8D44;&#x6E90;&#xFF0C;&#x5728;<code>r9a07g044l-cpg.h</code>&#x4E2D;&#x6709;&#x76F8;&#x5E94;&#x5B9A;&#x4E49;</p>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_SCIF0    13</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_SCIF1    14</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_SCIF2    15</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_SCIF3    16</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> R9A07G044L_CLK_SCIF4    17</span>
+</code></pre>
+<h2 id="3-&#x5206;&#x6790;">3. &#x5206;&#x6790;</h2>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">rzg2l_gpt_probe</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> platform_device *pdev)</span>
+</span>{
+  ...
+
+  rzg2l_gpt-&gt;rstc = devm_reset_control_get(&amp;pdev-&gt;dev, <span class="hljs-literal">NULL</span>);
+  <span class="hljs-keyword">if</span> (IS_ERR(rzg2l_gpt-&gt;rstc)) {
+    dev_err(&#x3B4;pdev-&gt;dev, <span class="hljs-string">&quot;failed to get cpg reset\n&quot;</span>);
+    <span class="hljs-comment">// return PTR_ERR(rzg2l_gpt-&gt;rstc);</span>
+  }
+
+  ...
+}
+</code></pre>
+<p>&#x5BF9;rstc&#x5F02;&#x5E38;&#x60C5;&#x51B5;&#x4E0D;return&#xFF0C;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#xFF08;<code>gpt-rzg2l 10048300.gpt</code>&#xFF09;&#x5728;<code>devm_reset_control_get()</code>&#x53EF;&#x4EE5;&#x6B63;&#x5E38;&#x6267;&#x884C;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#xFF08;<code>gpt-rzg2l 10048600.gpt</code>&#xFF09;&#x4F1A;&#x62A5;&#x9519;</p>
+<pre><code class="lang-log">[    0.092427] gpt-rzg2l 10048300.gpt: GPT not use POEG
+[    0.092642] gpt-rzg2l 10048300.gpt: RZ/G2L GPT Driver probed
+[    0.092851] gpt-rzg2l 10048600.gpt: GPT not use POEG
+[    0.092859] ------------[ cut here ]------------
+[    0.092903] WARNING: CPU: 1 PID: 1 at drivers/reset/core.c:419 __reset_control_get_internal+0xdc/0x128
+[    0.092906] Modules linked in:
+[    0.092916] CPU: 1 PID: 1 Comm: swapper/0 Not tainted 4.19.165-cip41-arm64-renesas #2
+[    0.092919] Hardware name: Forlinx OKG2L Evaluation board (DT)
+[    0.092923] pstate: 40c00005 (nZcv daif +PAN +UAO)
+[    0.092928] pc : __reset_control_get_internal+0xdc/0x128
+[    0.092933] lr : __reset_control_get_internal+0xdc/0x128
+[    0.092935] sp : ffff000008013a50
+[    0.092937] x29: ffff000008013a50 x28: 0000000000000000
+[    0.092942] x27: 0000000000000000 x26: ffff000008e204e0
+[    0.092946] x25: ffff000008e7d060 x24: 0000000000000000
+[    0.092950] x23: 0000000000000000 x22: ffff80007d72aa80
+[    0.092954] x21: 0000000000000006 x20: ffff80007d72aaa0
+[    0.092958] x19: ffff80007ce9b200 x18: ffff000008ec1000
+[    0.092962] x17: 0000000000000fff x16: 0000000000007fff
+[    0.092966] x15: 00000000fffffff0 x14: ffff000008f60c72
+[    0.092969] x13: 0000000000000000 x12: ffff000008f60000
+[    0.092973] x11: ffff000008ec1000 x10: ffff000008f602c8
+[    0.092977] x9 : 0000000000000000 x8 : 0000000000000004
+[    0.092981] x7 : ffff000008f60000 x6 : 000000000000008c
+[    0.092985] x5 : 0000000000000000 x4 : 0000000000000000
+[    0.092988] x3 : ffffffffffffffff x2 : 1be4e7ac3d036e00
+[    0.092992] x1 : 0000000000000000 x0 : 0000000000000024
+[    0.092997] Call trace:
+[    0.093003]  __reset_control_get_internal+0xdc/0x128
+[    0.093008]  __of_reset_control_get+0x13c/0x1b8
+[    0.093011]  __reset_control_get+0x30/0x1a8
+[    0.093016]  __devm_reset_control_get+0x64/0xd8
+[    0.093024]  rzg2l_gpt_probe+0x130/0x4a8
+[    0.093032]  platform_drv_probe+0x50/0xa0
+[    0.093036]  really_probe+0x1dc/0x298
+[    0.093040]  driver_probe_device+0x54/0xe8
+[    0.093044]  __driver_attach+0xe0/0xe8
+[    0.093048]  bus_for_each_dev+0x70/0xc0
+[    0.093051]  driver_attach+0x20/0x28
+[    0.093055]  bus_add_driver+0x1dc/0x208
+[    0.093059]  driver_register+0x60/0x110
+[    0.093063]  __platform_driver_register+0x44/0x50
+[    0.093071]  rzg2l_gpt_driver_init+0x18/0x20
+[    0.093078]  do_one_initcall+0x74/0x178
+[    0.093084]  kernel_init_freeable+0x18c/0x224
+[    0.093092]  kernel_init+0x10/0x104
+[    0.093096]  ret_from_fork+0x10/0x18
+[    0.093103] ---[ end trace 7dc9776788e7d665 ]---
+[    0.093110] gpt-rzg2l 10048600.gpt: failed to get cpg reset
+[    0.093128] ------------[ cut here ]------------
+[    0.093153] WARNING: CPU: 1 PID: 1 at drivers/reset/core.c:360 reset_control_deassert+0x128/0x138
+[    0.093155] Modules linked in:
+[    0.093161] CPU: 1 PID: 1 Comm: swapper/0 Tainted: G        W         4.19.165-cip41-arm64-renesas #2
+[    0.093163] Hardware name: Forlinx OKG2L Evaluation board (DT)
+[    0.093166] pstate: 40c00005 (nZcv daif +PAN +UAO)
+[    0.093171] pc : reset_control_deassert+0x128/0x138
+[    0.093175] lr : reset_control_deassert+0x128/0x138
+[    0.093177] sp : ffff000008013b90
+[    0.093179] x29: ffff000008013b90 x28: 0000000000000000
+[    0.093183] x27: 0000000000000000 x26: ffff000008e204e0
+[    0.093187] x25: ffff000008e7d060 x24: ffff000008edeaf0
+[    0.093191] x23: ffff80007d687400 x22: ffff000008eaa688
+[    0.093195] x21: ffff80007cd6fa80 x20: ffff80007d687410
+[    0.093199] x19: fffffffffffffff0 x18: ffff000008ec1000
+[    0.093203] x17: 0000000000000fff x16: 0000000000007fff
+[    0.093207] x15: 00000000fffffff0 x14: ffff000008f60c72
+[    0.093211] x13: 0000000000000000 x12: ffff000008f60000
+[    0.093215] x11: ffff000008ec1000 x10: ffff000008f602c8
+[    0.093219] x9 : 0000000000000000 x8 : 0000000000000004
+[    0.093222] x7 : ffff000008f60000 x6 : 00000000000000ba
+[    0.093226] x5 : 0000000000000000 x4 : 0000000000000000
+[    0.093230] x3 : ffffffffffffffff x2 : 1be4e7ac3d036e00
+[    0.093233] x1 : 0000000000000000 x0 : 0000000000000024
+[    0.093237] Call trace:
+[    0.093241]  reset_control_deassert+0x128/0x138
+[    0.093246]  rzg2l_gpt_probe+0x140/0x4a8
+[    0.093251]  platform_drv_probe+0x50/0xa0
+[    0.093254]  really_probe+0x1dc/0x298
+[    0.093258]  driver_probe_device+0x54/0xe8
+[    0.093262]  __driver_attach+0xe0/0xe8
+[    0.093265]  bus_for_each_dev+0x70/0xc0
+[    0.093269]  driver_attach+0x20/0x28
+[    0.093273]  bus_add_driver+0x1dc/0x208
+[    0.093276]  driver_register+0x60/0x110
+[    0.093280]  __platform_driver_register+0x44/0x50
+[    0.093285]  rzg2l_gpt_driver_init+0x18/0x20
+[    0.093289]  do_one_initcall+0x74/0x178
+[    0.093292]  kernel_init_freeable+0x18c/0x224
+[    0.093297]  kernel_init+0x10/0x104
+[    0.093301]  ret_from_fork+0x10/0x18
+[    0.093303] ---[ end trace 7dc9776788e7d666 ]---
+[    0.093506] gpt-rzg2l 10048600.gpt: RZ/G2L GPT Driver probed
+</code></pre>
+<p>&#x6839;&#x636E;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x7684;<code>compatible</code>&#x5C5E;&#x6027;&#xFF0C;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x4F1A;&#x8C03;&#x7528;&#x4E24;&#x6B21;<code>static int rzg2l_gpt_probe(struct platform_device *pdev)</code>&#x51FD;&#x6570;</p>
+<p>&#x62A5;&#x9519;&#x4FE1;&#x606F;&#x6765;&#x81EA;<code>rzg2l_gpt-&gt;rstc = devm_reset_control_get(&amp;pdev-&gt;dev, NULL);</code>&#xFF0C;&#x8BBE;&#x5907;&#x6811;&#x91CC;&#x9762;&#x6709;<code>gpt3</code>&#xFF0C;<code>gpt6</code>&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x90FD;<code>enabled</code>&#xFF0C;&#x7B2C;&#x4E00;&#x6B21;&#x6267;&#x884C;&#x4E0D;&#x62A5;&#x9519;&#xFF0C;&#x7B2C;&#x4E8C;&#x6B21;&#x62A5;&#x9519;</p>
+<h2 id="4-call-trace">4. Call trace</h2>
+<ul>
+<li><code>rzg2l_gpt-&gt;rstc = devm_reset_control_get(&amp;pdev-&gt;dev, NULL);</code><ul>
+<li><code>return devm_reset_control_get_exclusive(dev, id);</code><ul>
+<li><code>return __devm_reset_control_get(dev, id, 0, false, false);</code><ul>
+<li><code>rstc = __reset_control_get(&amp;pdev-&gt;dev, NULL, 0, false, false);</code><ul>
+<li><code>return __of_reset_control_get(pdev-&gt;dev.of_node, NULL, 0, false, false);</code><ul>
+<li><code>rstc = __reset_control_get_internal(rcdev, rstc_id, shared);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="41-devmresetcontrolgetdev-id">4.1. devm_reset_control_get(dev, id)</h3>
+<ul>
+<li><code>dev</code>&#x662F;platform device&#xFF0C;&#x8FD9;&#x91CC;&#x5373;gpt&#x8BBE;&#x5907;</li>
+<li><code>id</code> NULL</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">inline</span> <span class="hljs-keyword">struct</span> reset_control *<span class="hljs-title">devm_reset_control_get</span><span class="hljs-params">(
+        <span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id)</span>
+</span>{
+  <span class="hljs-keyword">return</span> devm_reset_control_get_exclusive(dev, id);
+}
+</code></pre>
+<h3 id="42-devmresetcontrolgetexclusive">4.2. devm_reset_control_get_exclusive()</h3>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> <span class="hljs-keyword">inline</span> <span class="hljs-keyword">struct</span> reset_control *
+__<span class="hljs-function">must_check <span class="hljs-title">devm_reset_control_get_exclusive</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> device *dev,
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id)</span>
+</span>{
+  <span class="hljs-keyword">return</span> __devm_reset_control_get(dev, id, <span class="hljs-number">0</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>);
+}
+</code></pre>
+<h3 id="43-devmresetcontrolgetdev-id-index-shared-optional">4.3. __devm_reset_control_get(dev, id, index, shared, optional)</h3>
+<ul>
+<li><code>index</code>index&#x662F;&#x6307;&#x7B2C;0&#x4E2A;</li>
+<li><code>shared</code>reset&#x8D44;&#x6E90;&#x662F;&#x5426;&#x5171;&#x4EAB;</li>
+<li><code>optional</code>&#x662F;&#x5426;&#x53EF;&#x9009;&#xFF0C;&#x662F;&#x5426;&#x4E3A;&#x975E;&#x5FC5;&#x9009;</li>
+</ul>
+<p>reset&#x63A7;&#x5236;&#x5668;&#x662F;&#x8BBE;&#x5907;&#xFF0C;&#x6240;&#x6709;&#x7684;reset&#x8D44;&#x6E90;&#x90FD;&#x89C6;&#x4E3A;&#x8BBE;&#x5907;&#xFF0C;&#x8FD9;&#x91CC;&#x662F;&#x7533;&#x8BF7;reset&#x8BBE;&#x5907;&#x8D44;&#x6E90;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> reset_control *__devm_reset_control_get(<span class="hljs-keyword">struct</span> device *dev,
+             <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id, <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">bool</span> shared,
+             <span class="hljs-keyword">bool</span> optional)
+{
+  <span class="hljs-keyword">struct</span> reset_control **ptr, *rstc;
+
+  ptr = devres_alloc(devm_reset_control_release, <span class="hljs-keyword">sizeof</span>(*ptr),
+         GFP_KERNEL);
+  <span class="hljs-keyword">if</span> (!ptr)
+    <span class="hljs-keyword">return</span> ERR_PTR(-ENOMEM);
+
+  rstc = __reset_control_get(dev, id, index, shared, optional); <span class="hljs-comment">//&#x83B7;&#x53D6;rstc</span>
+  <span class="hljs-keyword">if</span> (!IS_ERR(rstc)) {
+    *ptr = rstc;
+    devres_add(dev, ptr);
+  } <span class="hljs-keyword">else</span> {
+    devres_free(ptr);
+  }
+
+  <span class="hljs-keyword">return</span> rstc;
+}
+EXPORT_SYMBOL_GPL(__devm_reset_control_get);
+</code></pre>
+<h3 id="44-resetcontrolget">4.4. __reset_control_get</h3>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> reset_control *__reset_control_get(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id,
+            <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">bool</span> shared, <span class="hljs-keyword">bool</span> optional)
+{
+  <span class="hljs-keyword">if</span> (dev-&gt;of_node)
+    <span class="hljs-keyword">return</span> __of_reset_control_get(dev-&gt;of_node, id, index, shared,  <span class="hljs-comment">//&#x89E3;&#x6790;&#x8BBE;&#x5907;&#x6811;&#xFF0C;&#x83B7;&#x53D6;rstc</span>
+                optional);
+
+  <span class="hljs-keyword">return</span> __reset_control_get_from_lookup(dev, id, shared, optional);
+}
+EXPORT_SYMBOL_GPL(__reset_control_get);
+</code></pre>
+<h3 id="45-ofresetcontrolgetpdev-devofnode-null-0-false-false">4.5. __of_reset_control_get(pdev-&gt;dev.of_node, NULL, 0, false, false)</h3>
+<ul>
+<li><code>node</code>&#x4F20;&#x5165;&#x7684;&#x8BBE;&#x5907;&#x6811;&#x8282;&#x70B9;&#xFF0C;gpt&#x7684;&#x8BBE;&#x5907;&#x6811;&#x8282;&#x70B9;</li>
+<li><code>id</code>&#x548C;reset-names&#x76F8;&#x5173;&#xFF0C;&#x503C;&#x4E3A;NULL</li>
+</ul>
+<p><code>__of_reset_control_get()</code>&#x89E3;&#x6790;&#x4F20;&#x5165;&#x7684;gpt&#x8BBE;&#x5907;&#x6811;&#x8282;&#x70B9;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;reset&#x8D44;&#x6E90;&#xFF0C;&#x5B83;&#x4E0D;&#x5173;&#x5FC3;&#x8FD9;&#x4E2A;reset&#x8D44;&#x6E90;&#x662F;&#x9700;&#x8981;&#x65B0;&#x5EFA;&#x8FD8;&#x662F;&#x53EF;&#x4EE5;&#x4ECE;&#x4E4B;&#x524D;&#x7684;&#x94FE;&#x8868;&#x4E2D;&#x67E5;&#x627E;&#x5230;</p>
+<pre><code class="lang-c">gpt6: gpt@<span class="hljs-number">10048600</span> {
+  compatible = <span class="hljs-string">&quot;renesas,gpt-r9a07g044l&quot;</span>;
+  reg = &lt;<span class="hljs-number">0</span> <span class="hljs-number">0x10048600</span> <span class="hljs-number">0</span> <span class="hljs-number">0xa4</span>&gt;;
+  <span class="hljs-meta">#pwm-cells = &lt;2&gt;;</span>
+  interrupts = &lt;GIC_SPI <span class="hljs-number">296</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">297</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">298</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">299</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">300</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">301</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">302</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">303</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">304</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">305</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">306</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">307</span> IRQ_TYPE_EDGE_RISING&gt;,
+    &lt;GIC_SPI <span class="hljs-number">308</span> IRQ_TYPE_EDGE_RISING&gt;;
+  interrupt-names = <span class="hljs-string">&quot;gtcia&quot;</span>, <span class="hljs-string">&quot;gtcib&quot;</span>, <span class="hljs-string">&quot;gtcic&quot;</span>, <span class="hljs-string">&quot;gtcid&quot;</span>,
+    <span class="hljs-string">&quot;gtcie&quot;</span>, <span class="hljs-string">&quot;gtcif&quot;</span>, <span class="hljs-string">&quot;gtciada&quot;</span>, <span class="hljs-string">&quot;gtciadb&quot;</span>,
+    <span class="hljs-string">&quot;gtciv&quot;</span>, <span class="hljs-string">&quot;gtciu&quot;</span>, <span class="hljs-string">&quot;gtcih&quot;</span>, <span class="hljs-string">&quot;gtcil&quot;</span>,
+    <span class="hljs-string">&quot;gtdei&quot;</span>;
+  clocks = &lt;&amp;cpg CPG_MOD R9A07G044L_CLK_GPT&gt;;
+  power-domains = &lt;&amp;cpg&gt;;
+  resets =  &lt;&amp;cpg R9A07G044L_CLK_GPT&gt;;
+  status = <span class="hljs-string">&quot;disabled&quot;</span>;
+};
+
+&amp;gpt6 {
+  pinctrl<span class="hljs-number">-0</span> = &lt;&amp;gpt6_pins&gt;;
+  pinctrl-names = <span class="hljs-string">&quot;default&quot;</span>;
+  channel=<span class="hljs-string">&quot;both_AB&quot;</span>;
+  status = <span class="hljs-string">&quot;okay&quot;</span>;
+};
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> reset_control *__of_reset_control_get(<span class="hljs-keyword">struct</span> device_node *node,
+             <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *id, <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">bool</span> shared,
+             <span class="hljs-keyword">bool</span> optional)
+{
+  <span class="hljs-keyword">struct</span> reset_control *rstc;
+  <span class="hljs-keyword">struct</span> reset_controller_dev *r, *rcdev;
+  <span class="hljs-keyword">struct</span> of_phandle_args args;
+  <span class="hljs-keyword">int</span> rstc_id;
+  <span class="hljs-keyword">int</span> ret;
+
+  <span class="hljs-keyword">if</span> (!node)
+    <span class="hljs-keyword">return</span> ERR_PTR(-EINVAL);
+
+  <span class="hljs-keyword">if</span> (id) {   <span class="hljs-comment">//id&#x662F;&#x4F20;&#x5165;&#x7684;&#x5F62;&#x53C2;&#xFF0C;&#x503C;&#x4E3A;NULL</span>
+    index = of_property_match_string(node,
+             <span class="hljs-string">&quot;reset-names&quot;</span>, id);
+    <span class="hljs-keyword">if</span> (index == -EILSEQ)
+      <span class="hljs-keyword">return</span> ERR_PTR(index);
+    <span class="hljs-keyword">if</span> (index &lt; <span class="hljs-number">0</span>)
+      <span class="hljs-keyword">return</span> optional ? <span class="hljs-literal">NULL</span> : ERR_PTR(-ENOENT);
+  }
+
+  ret = of_parse_phandle_with_args(node, <span class="hljs-string">&quot;resets&quot;</span>, <span class="hljs-string">&quot;#reset-cells&quot;</span>,
+           index, &amp;args);   <span class="hljs-comment">//&#x6839;&#x636E;gpt6&#x8282;&#x70B9;&#x5185;&#x7684;&#x201C;resets&#x201D;&#x5C5E;&#x6027;&#xFF0C;&#x67E5;&#x627E;&#x201C;#reset-cells&#x201D;&#x5C5E;&#x6027;&#x7684;&#x8282;&#x70B9;&#xFF1F;&#xFF1F;&#xFF1F;</span>
+                            <span class="hljs-comment">//index&#x503C;&#x4E3A;0</span>
+  <span class="hljs-keyword">if</span> (ret == -EINVAL)
+    <span class="hljs-keyword">return</span> ERR_PTR(ret);
+  <span class="hljs-keyword">if</span> (ret)
+    <span class="hljs-keyword">return</span> optional ? <span class="hljs-literal">NULL</span> : ERR_PTR(ret);
+
+  mutex_lock(&amp;reset_list_mutex);
+  rcdev = <span class="hljs-literal">NULL</span>;
+  list_for_each_entry(r, &amp;reset_controller_list, <span class="hljs-built_in">list</span>) {    <span class="hljs-comment">//&#x5728;reset_controller_list&#x94FE;&#x8868;&#x4E2D;&#x67E5;&#x627E;&#x76F8;&#x5E94;&#x7684;reset_controller_dev</span>
+    <span class="hljs-keyword">if</span> (args.np == r-&gt;of_node) {  <span class="hljs-comment">//args.np&#x662F;&#x6307;&#x5411;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x67D0;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6307;&#x9488;</span>
+      rcdev = r;
+      <span class="hljs-keyword">break</span>;
+    }
+  }
+
+  <span class="hljs-keyword">if</span> (!rcdev) {
+    rstc = ERR_PTR(-EPROBE_DEFER);
+    <span class="hljs-keyword">goto</span> out;
+  }
+
+  <span class="hljs-keyword">if</span> (WARN_ON(args.args_count != rcdev-&gt;of_reset_n_cells)) {
+    rstc = ERR_PTR(-EINVAL);
+    <span class="hljs-keyword">goto</span> out;
+  }
+
+  <span class="hljs-comment">////&#x5728;&#x8FD9;&#x4E4B;&#x524D;&#x7684;&#x4EE3;&#x7801;&#x6574;&#x4F53;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x83B7;&#x5F97;rcdev&#x64CD;&#x4F5C;&#x53E5;&#x67C4;&#xFF0C;g2l&#x53EA;&#x6709;&#x4E00;&#x4E2A;reset_controller_dev</span>
+
+  rstc_id = rcdev-&gt;of_xlate(rcdev, &amp;args);  <span class="hljs-comment">//&#x89E3;&#x6790;gpt&#x8BBE;&#x5907;&#x6811;&#x8282;&#x70B9;&#x4E2D;resets&#x5C5E;&#x6027;&#xFF0C;&#x83B7;&#x53D6;&#x8981;&#x590D;&#x4F4D;&#x7684;&#x5916;&#x8BBE;&#x7684;index&#xFF0C;include/dt-bindings/clock/r9a07g044l-cpg.h</span>
+  <span class="hljs-keyword">if</span> (rstc_id &lt; <span class="hljs-number">0</span>) {
+    rstc = ERR_PTR(rstc_id);
+    <span class="hljs-keyword">goto</span> out;
+  }
+
+  <span class="hljs-comment">/* reset_list_mutex also protects the rcdev&apos;s reset_control list */</span>
+  <span class="hljs-comment">//rcdev &#x8BBE;&#x5907;&#x6811;&#x4E2D; GPT&#x8282;&#x70B9;&#x4E2D;&#x4F7F;&#x7528;&#x7684; reset&#x63A7;&#x5236;&#x5668;</span>
+  rstc = __reset_control_get_internal(rcdev, rstc_id, shared);
+
+out:
+  mutex_unlock(&amp;reset_list_mutex);
+  of_node_put(args.np);
+
+  <span class="hljs-keyword">return</span> rstc;
+}
+EXPORT_SYMBOL_GPL(__of_reset_control_get);
+</code></pre>
+<h4 id="451-&#x5173;&#x4E8E;ofparsephandlewithargs">4.5.1. &#x5173;&#x4E8E;<code>of_parse_phandle_with_args()</code></h4>
+<p><a href="https://blog.csdn.net/mars_Vessalius/article/details/116483979" target="_blank">https://blog.csdn.net/mars_Vessalius/article/details/116483979</a></p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * of_parse_phandle_with_args() - Find a node pointed by phandle in a list
+ * @np:          pointer to a device tree node containing a list
+ * @list_name:   property name that contains a list
+ * @cells_name:  property name that specifies phandles&apos; arguments count
+ * @index:       index of a phandle to parse out
+ * @out_args:    optional pointer to output arguments structure (will be filled)
+ *
+ * This function is useful to parse lists of phandles and their arguments.
+ * Returns 0 on success and fills out_args, on error returns appropriate
+ * errno value.
+ *
+ * Caller is responsible to call of_node_put() on the returned out_args-&gt;np
+ * pointer.
+ *
+ * Example:
+ *
+ * phandle1: node1 {
+ *  #list-cells = &lt;2&gt;;
+ * }
+ *
+ * phandle2: node2 {
+ *  #list-cells = &lt;1&gt;;
+ * }
+ *
+ * node3 {
+ *  list = &lt;&amp;phandle1 1 2 &amp;phandle2 3&gt;;
+ * }
+ *
+ * To get a device_node of the `node2&apos; node you may call this:
+ * of_parse_phandle_with_args(node3, &quot;list&quot;, &quot;#list-cells&quot;, 1, &amp;args);
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">of_parse_phandle_with_args</span><span class="hljs-params">(<span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> device_node *np, <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *list_name,
+        <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *cells_name, <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">struct</span> of_phandle_args *out_args)</span>
+</span></code></pre>
+<p>&#x8FD9;&#x91CC;&#x7684;<code>#list-cells</code>&#x6307;&#x7684;&#x662F;&#x5F15;&#x7528;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x51E0;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5BF9;&#x4E8E;node3&#xFF0C;node3&#x4E2D;&#x5B9A;&#x4E49;&#x4E86;list&#x5C5E;&#x6027;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x3002;&#x5728;list&#x6570;&#x7EC4;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x5206;&#x522B;&#x662F;&#x5BF9;phandle1&#x548C;phandle2&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x800C;&#x4E14;&#x8981;&#x6839;&#x636E;phandle1&#x548C;phandle2&#x7684;#list-cells&#x7684;&#x503C;&#x5199;&#x5165;&#x76F8;&#x5E94;&#x4E2A;&#x6570;&#x7684;&#x53C2;&#x6570;&#x3002;&#x5373;&#xFF0C;phandle1&#x7684;&#x53C2;&#x6570;1 2&#xFF0C;phandle2&#x7684;&#x53C2;&#x6570; 3 &#xFF1F;&#xFF1F;&#xFF1F;&#xFF1F;&#xFF1F;</p>
+<p>&#x5BF9;&#x4E8E;gpt&#x4EE3;&#x7801;&#x6765;&#x8BF4;&#xFF0C;</p>
+<pre><code class="lang-c">ret = of_parse_phandle_with_args(node, <span class="hljs-string">&quot;resets&quot;</span>, <span class="hljs-string">&quot;#reset-cells&quot;</span>, index, &amp;args);
+</code></pre>
+<p>&#x4E5F;&#x5C31;&#x662F;&#x5728;node&#x8282;&#x70B9;&#xFF08;gpt6&#x8282;&#x70B9;&#xFF09;&#x4E2D;&#x7684;resets&#x5C5E;&#x6027;&#x4E2D;&#x67E5;&#x627E;&#x7B2C;0&#x4E2A;&#xFF1F;&#xFF1F;&#xFF1F;</p>
+<p><a href="https://www.kernel.org/doc/Documentation/devicetree/bindings/reset/reset.txt" target="_blank">https://www.kernel.org/doc/Documentation/devicetree/bindings/reset/reset.txt</a></p>
+<ul>
+<li>&#x6000;&#x7591;&#x662F;&#x590D;&#x4F4D;&#x4FE1;&#x53F7;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5BF9;&#x6BD4;&#x4E86;&#x624B;&#x518C; 7.2.4.138 Reset Control Register SCIF (CPG_RST_SCIF)&#x548C; 7.2.4.121 Reset Control Register GPT (CPG_RST_GPT)<ul>
+<li>&#x7ED3;&#x679C;&#x53D1;&#x73B0;&#xFF0C;&#x5BF9;&#x4E8E;gpt&#x6765;&#x8BF4;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x590D;&#x4F4D;&#x4FE1;&#x53F7;&#xFF0C;&#x4E0D;&#x50CF;scif&#xFF0C;&#x80FD;&#x5206;&#x522B;&#x5BF9;01234&#x590D;&#x4F4D;&#x3002;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x5173;&#x4E8E;gpt&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x624B;&#x518C;&#x91CC;&#x9762;&#x5199;&#x4ED6;&#x6709;8&#x4E2A;channel&#xFF1F;</li>
+</ul>
+</li>
+</ul>
+<h3 id="46-resetcontrolgetinternalrcdev-index-shared">4.6. __reset_control_get_internal(rcdev, index, shared)</h3>
+<ul>
+<li><code>rcdev</code>&#x6700;&#x7EC8;&#x6307;&#x5411;&#x7684;&#x662F;reset_controller_dev&#xFF0C;&#x5BF9;&#x4E8E;G2L&#x6765;&#x8BF4;&#x5C31;&#x662F;cpg&#xFF0C;&#x552F;&#x4E00;</li>
+<li><code>index</code>&#x662F;&#x8BBE;&#x5907;&#x6811;&#x4E2D;gpt&#x8282;&#x70B9;&#x7684;resets&#x5C5E;&#x6027;&#x7684;&#x503C;</li>
+<li><code>shared</code>&#xFF0C;bool&#xFF0C;&#x662F;&#x5426;&#x4E3A;&#x5171;&#x4EAB;&#x8D44;&#x6E90;index</li>
+</ul>
+<p><code>__reset_control_get_internal()</code>&#x6839;&#x636E;index&#x67E5;&#x627E;&#x7B26;&#x5408;&#x8981;&#x6C42;&#x7684;rstc&#xFF0C;&#x6216;&#x8005;&#x65B0;&#x5EFA;rstc&#x5E76;&#x52A0;&#x5165;reset_controller_dev&#x7684;&#x961F;&#x5217;&#xFF0C;&#x4EA4;&#x7531;reset_controller_dev&#x7BA1;&#x7406;</p>
+<p>&#x5982;&#x679C;&#x8981;&#x67E5;&#x627E;&#x7684;reset&#x8D44;&#x6E90;&#x5DF2;&#x7ECF;&#x5B58;&#x5728;&#x4E8E;&#x94FE;&#x8868;&#x91CC;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x8D44;&#x6E90;&#x662F;shared&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x8FD9;&#x4E2A;reset&#x8D44;&#x6E90;&#xFF1B;&#x5982;&#x679C;&#x4E0D;&#x662F;shared&#xFF0C;&#x90A3;&#x5C31;&#x62A5;&#x9519;<code>return ERR_PTR(-EBUSY);</code></p>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> <span class="hljs-keyword">struct</span> reset_control *__reset_control_get_internal(
+        <span class="hljs-keyword">struct</span> reset_controller_dev *rcdev,
+        <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> index, <span class="hljs-keyword">bool</span> shared)
+{
+  <span class="hljs-keyword">struct</span> reset_control *rstc;
+
+  lockdep_assert_held(&amp;reset_list_mutex);
+
+  list_for_each_entry(rstc, &amp;rcdev-&gt;reset_control_head, <span class="hljs-built_in">list</span>) {
+    <span class="hljs-keyword">if</span> (rstc-&gt;id == index) {
+      <span class="hljs-keyword">if</span> (WARN_ON(!rstc-&gt;shared || !shared))
+        <span class="hljs-keyword">return</span> ERR_PTR(-EBUSY);   <span class="hljs-comment">//-16&#x662F;&#x4ECE;&#x8FD9;&#x91CC;&#x8FD4;&#x56DE;&#x7684;</span>
+
+      kref_get(&amp;rstc-&gt;refcnt);  <span class="hljs-comment">//refer count</span>
+      <span class="hljs-keyword">return</span> rstc;
+    }
+  }
+
+  rstc = kzalloc(<span class="hljs-keyword">sizeof</span>(*rstc), GFP_KERNEL);
+  <span class="hljs-keyword">if</span> (!rstc)
+    <span class="hljs-keyword">return</span> ERR_PTR(-ENOMEM);
+
+  try_module_get(rcdev-&gt;owner);
+
+  rstc-&gt;rcdev = rcdev;
+  list_add(&amp;rstc-&gt;<span class="hljs-built_in">list</span>, &amp;rcdev-&gt;reset_control_head);
+  rstc-&gt;id = index;
+  kref_init(&amp;rstc-&gt;refcnt);
+  rstc-&gt;shared = shared;
+
+  <span class="hljs-keyword">return</span> rstc;
+}
+</code></pre>
+<h2 id="5-&#x7ED3;&#x8BBA;">5. &#x7ED3;&#x8BBA;</h2>
+<p>&#x4FEE;&#x6539; drivers/pwm/gpt-rzg2l.c</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">rzg2l_gpt_probe</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> platform_device *pdev)</span>
+</span>{
+  ...
+
+  <span class="hljs-comment">// rzg2l_gpt-&gt;rstc = devm_reset_control_get(&amp;pdev-&gt;dev, NULL);</span>
+  rzg2l_gpt-&gt;rstc = devm_reset_control_get_shared(&amp;pdev-&gt;dev, <span class="hljs-literal">NULL</span>);
+
+  <span class="hljs-keyword">if</span> (IS_ERR(rzg2l_gpt-&gt;rstc)) {
+    dev_err(&#x3B4;pdev-&gt;dev, <span class="hljs-string">&quot;failed to get cpg reset\n&quot;</span>);
+    <span class="hljs-keyword">return</span> PTR_ERR(rzg2l_gpt-&gt;rstc);
+  }
+
+  ...
+}
+</code></pre>
+<h2 id="6-&#x53C2;&#x8003;">6. &#x53C2;&#x8003;</h2>
+<ul>
+<li><a href="https://www.kernel.org/doc/html/latest/driver-api/reset.html#api-reference" target="_blank">Reset controller API - kernel.org</a></li>
+<li><a href="http://www.wowotech.net/pm_subsystem/reset_framework.html" target="_blank">Linux reset framework - &#x8717;&#x7A9D;&#x79D1;&#x6280;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Linux-device-model.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Linux-device-model">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux-reset-framework","level":"1.3.7","depth":2,"previous":{"title":"Linux-device-model","level":"1.3.6","depth":2,"path":"Linux/Linux-device-model.md","ref":"./Linux/Linux-device-model.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","code"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search-pro":{},"splitter":{},"chapter-fold":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Liyi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","language":"zh-hans","gitbook":"3.2.3","description":"A new life"},"file":{"path":"Linux/Linux-reset-framework.md","mtime":"2022-12-02T07:39:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-02T08:02:06.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

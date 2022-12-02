@@ -1,0 +1,715 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>日志和异常 · Notes</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Liyi">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rospy.html" />
+    
+    
+    <link rel="prev" href="roscpp时钟.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ROS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ROS开发环境.html">
+            
+                <a href="ROS开发环境.html">
+            
+                    
+                    ROS开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="二进制包和源码包.html">
+            
+                <a href="二进制包和源码包.html">
+            
+                    
+                    二进制包和源码包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="ROS工作空间.html">
+            
+                <a href="ROS工作空间.html">
+            
+                    
+                    ROS工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="packages.html">
+            
+                <a href="packages.html">
+            
+                    
+                    packages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="package.xml.html">
+            
+                <a href="package.xml.html">
+            
+                    
+                    package.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="CMakeLists.txt.html">
+            
+                <a href="CMakeLists.txt.html">
+            
+                    
+                    CMakeLists.txt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="ROS通信架构.html">
+            
+                <a href="ROS通信架构.html">
+            
+                    
+                    ROS通信架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="Launch文件.html">
+            
+                <a href="Launch文件.html">
+            
+                    
+                    Launch文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="Topic和msg.html">
+            
+                <a href="Topic和msg.html">
+            
+                    
+                    Topic和msg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="Service和srv.html">
+            
+                <a href="Service和srv.html">
+            
+                    
+                    Service和srv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="Action.html">
+            
+                <a href="Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="Parameter-server.html">
+            
+                <a href="Parameter-server.html">
+            
+                    
+                    Parameter server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="roscpp.html">
+            
+                <a href="roscpp.html">
+            
+                    
+                    roscpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="init以及NodeHandle.html">
+            
+                <a href="init以及NodeHandle.html">
+            
+                    
+                    init以及NodeHandle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="topic-in-roscpp.html">
+            
+                <a href="topic-in-roscpp.html">
+            
+                    
+                    topic in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="service-in-roscpp.html">
+            
+                <a href="service-in-roscpp.html">
+            
+                    
+                    service in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="param-in-roscpp.html">
+            
+                <a href="param-in-roscpp.html">
+            
+                    
+                    param in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="命名空间.html">
+            
+                <a href="命名空间.html">
+            
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="roscpp时钟.html">
+            
+                <a href="roscpp时钟.html">
+            
+                    
+                    roscpp时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6.7" data-path="日志和异常.html">
+            
+                <a href="日志和异常.html">
+            
+                    
+                    日志和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="rospy.html">
+            
+                <a href="rospy.html">
+            
+                    
+                    rospy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="TF-坐标转换.html">
+            
+                <a href="TF-坐标转换.html">
+            
+                    
+                    TF 坐标转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="TF-in-roscpp.html">
+            
+                <a href="TF-in-roscpp.html">
+            
+                    
+                    TF in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../Linux/Linux.html">
+            
+                <a href="../Linux/Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../Linux/Linux.html">
+            
+                <a href="../Linux/Linux.html">
+            
+                    
+                    RZG2L-关于sci(f)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../Linux/RZG2L-GPT.html">
+            
+                <a href="../Linux/RZG2L-GPT.html">
+            
+                    
+                    RZG2L-GPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../Linux/RZG2L-IPC.html">
+            
+                <a href="../Linux/RZG2L-IPC.html">
+            
+                    
+                    RZG2L-IPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../Linux/RZG2L-Camera.html">
+            
+                <a href="../Linux/RZG2L-Camera.html">
+            
+                    
+                    RZG2L-Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../Linux/Auth.html">
+            
+                <a href="../Linux/Auth.html">
+            
+                    
+                    Auth UID加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../Linux/Linux-device-model.html">
+            
+                <a href="../Linux/Linux-device-model.html">
+            
+                    
+                    Linux-device-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../Linux/Linux-reset-framework.html">
+            
+                <a href="../Linux/Linux-reset-framework.html">
+            
+                    
+                    Linux-reset-framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >日志和异常</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x65E5;&#x5FD7;&#x548C;&#x5F02;&#x5E38;">&#x65E5;&#x5FD7;&#x548C;&#x5F02;&#x5E38;</h1>
+<h2 id="1-&#x65E5;&#x5FD7;">1. &#x65E5;&#x5FD7;</h2>
+<p>ROS&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x65E5;&#x5FD7;&#x7CFB;&#x7EDF;&#x662F;&#x57FA;&#x4E8E;topic&#x7684;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x90FD;&#x8F93;&#x51FA;&#x5230;<code>/rosout</code>&#x8BDD;&#x9898;&#x4E0A;&#xFF0C;<code>rosout</code>&#x672C;&#x8EAB;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x8D1F;&#x8D23;&#x5904;&#x7406;ROS&#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x4F1A;&#x5728;&#x542F;&#x52A8;<code>master</code>&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x542F;&#x52A8;</p>
+<p>ROS&#x7684;&#x65E5;&#x5FD7;&#x5206;&#x4E3A;5&#x4E2A;&#x7B49;&#x7EA7;</p>
+<ul>
+<li>DEBUG</li>
+<li>INFO</li>
+<li>WARN</li>
+<li>ERROR</li>
+<li>FATAL</li>
+</ul>
+<p>&#x7528;&#x6CD5;&#x7C7B;&#x4F3C;<code>printf()</code>&#x51FD;&#x6570;&#xFF0C;&#x652F;&#x6301;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;</p>
+<pre><code class="lang-cpp">ROS_DEBUG(<span class="hljs-string">&quot;The velocity is %f&quot;</span>, vel);
+ROS_WARN(<span class="hljs-string">&quot;Warn: the use is deprecated.&quot;</span>);
+ROS_FATAL(<span class="hljs-string">&quot;Cannot start this node.&quot;</span>);
+...
+</code></pre>
+<p>&#x5173;&#x4E8E;&#x65E5;&#x5FD7;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x53C2;&#x8003;<a href="https://www.ncnynl.com/archives/201702/1299.html" target="_blank">ROS&#x4E0E;C++&#x5165;&#x95E8;&#x6559;&#x7A0B;-Logging(&#x65E5;&#x5FD7;)</a></p>
+<h2 id="2-&#x5F02;&#x5E38;">2. &#x5F02;&#x5E38;</h2>
+<p>roscpp&#x6240;&#x6709;&#x7684;&#x5F02;&#x5E38;&#x90FD;&#x7EE7;&#x627F;&#x57FA;&#x7C7B;<code>ros::Exception</code>&#xFF0C;roscpp&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x5F02;&#x5E38;&#x7C7B;&#x578B;&#xFF0C;&#x5F53;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x9519;&#x8BEF;&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#xFF1A;</p>
+<ul>
+<li>&#x5F53;&#x65E0;&#x6548;&#x7684;&#x57FA;&#x7840;&#x540D;&#x79F0;&#x4F20;&#x7ED9;ros::init(),&#x901A;&#x5E38;&#x662F;&#x540D;&#x79F0;&#x4E2D;&#x6709;/,&#x5C31;&#x4F1A;&#x89E6;&#x53D1;<ul>
+<li><code>ros::InvalidNodeNameException</code></li>
+</ul>
+</li>
+<li>&#x5F53;&#x65E0;&#x6548;&#x540D;&#x79F0;&#x4F20;&#x7ED9;&#x4E86;roscpp<ul>
+<li><code>ros::InvalidNameExcaption</code></li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="roscpp时钟.html" class="navigation navigation-prev " aria-label="Previous page: roscpp时钟">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rospy.html" class="navigation navigation-next " aria-label="Next page: rospy">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"日志和异常","level":"1.2.6.7","depth":3,"next":{"title":"rospy","level":"1.2.7","depth":2,"path":"ROS/rospy.md","ref":"./ROS/rospy.md","articles":[]},"previous":{"title":"roscpp时钟","level":"1.2.6.6","depth":3,"path":"ROS/roscpp时钟.md","ref":"./ROS/roscpp时钟.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","code"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search-pro":{},"splitter":{},"chapter-fold":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Liyi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","language":"zh-hans","gitbook":"3.2.3","description":"A new life"},"file":{"path":"ROS/日志和异常.md","mtime":"2022-12-02T08:01:31.326Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-02T08:02:06.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

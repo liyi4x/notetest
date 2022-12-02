@@ -1,0 +1,1514 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Linux-device-model · Notes</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Liyi">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Linux-reset-framework.html" />
+    
+    
+    <link rel="prev" href="Auth.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../ROS/">
+            
+                <a href="../ROS/">
+            
+                    
+                    ROS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../ROS/ROS开发环境.html">
+            
+                <a href="../ROS/ROS开发环境.html">
+            
+                    
+                    ROS开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../ROS/二进制包和源码包.html">
+            
+                <a href="../ROS/二进制包和源码包.html">
+            
+                    
+                    二进制包和源码包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../ROS/ROS工作空间.html">
+            
+                <a href="../ROS/ROS工作空间.html">
+            
+                    
+                    ROS工作空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../ROS/packages.html">
+            
+                <a href="../ROS/packages.html">
+            
+                    
+                    packages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../ROS/package.xml.html">
+            
+                <a href="../ROS/package.xml.html">
+            
+                    
+                    package.xml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.2" data-path="../ROS/CMakeLists.txt.html">
+            
+                <a href="../ROS/CMakeLists.txt.html">
+            
+                    
+                    CMakeLists.txt
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../ROS/ROS通信架构.html">
+            
+                <a href="../ROS/ROS通信架构.html">
+            
+                    
+                    ROS通信架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.5.1" data-path="../ROS/Launch文件.html">
+            
+                <a href="../ROS/Launch文件.html">
+            
+                    
+                    Launch文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.2" data-path="../ROS/Topic和msg.html">
+            
+                <a href="../ROS/Topic和msg.html">
+            
+                    
+                    Topic和msg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.3" data-path="../ROS/Service和srv.html">
+            
+                <a href="../ROS/Service和srv.html">
+            
+                    
+                    Service和srv
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.4" data-path="../ROS/Action.html">
+            
+                <a href="../ROS/Action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5.5" data-path="../ROS/Parameter-server.html">
+            
+                <a href="../ROS/Parameter-server.html">
+            
+                    
+                    Parameter server
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../ROS/roscpp.html">
+            
+                <a href="../ROS/roscpp.html">
+            
+                    
+                    roscpp
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.6.1" data-path="../ROS/init以及NodeHandle.html">
+            
+                <a href="../ROS/init以及NodeHandle.html">
+            
+                    
+                    init以及NodeHandle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.2" data-path="../ROS/topic-in-roscpp.html">
+            
+                <a href="../ROS/topic-in-roscpp.html">
+            
+                    
+                    topic in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.3" data-path="../ROS/service-in-roscpp.html">
+            
+                <a href="../ROS/service-in-roscpp.html">
+            
+                    
+                    service in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.4" data-path="../ROS/param-in-roscpp.html">
+            
+                <a href="../ROS/param-in-roscpp.html">
+            
+                    
+                    param in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.5" data-path="../ROS/命名空间.html">
+            
+                <a href="../ROS/命名空间.html">
+            
+                    
+                    命名空间
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.6" data-path="../ROS/roscpp时钟.html">
+            
+                <a href="../ROS/roscpp时钟.html">
+            
+                    
+                    roscpp时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6.7" data-path="../ROS/日志和异常.html">
+            
+                <a href="../ROS/日志和异常.html">
+            
+                    
+                    日志和异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../ROS/rospy.html">
+            
+                <a href="../ROS/rospy.html">
+            
+                    
+                    rospy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../ROS/TF-坐标转换.html">
+            
+                <a href="../ROS/TF-坐标转换.html">
+            
+                    
+                    TF 坐标转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.8.1" data-path="../ROS/TF-in-roscpp.html">
+            
+                <a href="../ROS/TF-in-roscpp.html">
+            
+                    
+                    TF in roscpp
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    Linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Linux.html">
+            
+                <a href="Linux.html">
+            
+                    
+                    RZG2L-关于sci(f)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="RZG2L-GPT.html">
+            
+                <a href="RZG2L-GPT.html">
+            
+                    
+                    RZG2L-GPT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="RZG2L-IPC.html">
+            
+                <a href="RZG2L-IPC.html">
+            
+                    
+                    RZG2L-IPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="RZG2L-Camera.html">
+            
+                <a href="RZG2L-Camera.html">
+            
+                    
+                    RZG2L-Camera
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="Auth.html">
+            
+                <a href="Auth.html">
+            
+                    
+                    Auth UID加密
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="Linux-device-model.html">
+            
+                <a href="Linux-device-model.html">
+            
+                    
+                    Linux-device-model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="Linux-reset-framework.html">
+            
+                <a href="Linux-reset-framework.html">
+            
+                    
+                    Linux-reset-framework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Linux-device-model</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="linux&#x8BBE;&#x5907;&#x6A21;&#x578B;">Linux&#x8BBE;&#x5907;&#x6A21;&#x578B;</h1>
+<ul>
+<li><a href="#1-&#x524D;&#x8A00;">1. &#x524D;&#x8A00;</a><ul>
+<li><a href="#11-&#x6838;&#x5FC3;&#x601D;&#x60F3;">1.1. &#x6838;&#x5FC3;&#x601D;&#x60F3;</a></li>
+</ul>
+</li>
+<li><a href="#2-&#x76F8;&#x5173;&#x6570;&#x636E;&#x7ED3;&#x6784;">2. &#x76F8;&#x5173;&#x6570;&#x636E;&#x7ED3;&#x6784;</a></li>
+<li><a href="#3-&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x57FA;&#x672C;&#x6B65;&#x9AA4;">3. &#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</a></li>
+<li><a href="#4-probe">4. probe</a></li>
+<li><a href="#5-platform&#x9A71;&#x52A8;&#x6A21;&#x578B;">5. platform&#x9A71;&#x52A8;&#x6A21;&#x578B;</a></li>
+<li><a href="#6-i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;">6. i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;</a><ul>
+<li><a href="#61-&#x6570;&#x636E;&#x7ED3;&#x6784;">6.1. &#x6570;&#x636E;&#x7ED3;&#x6784;</a><ul>
+<li><a href="#611-bus">6.1.1. bus</a></li>
+<li><a href="#612-driver">6.1.2. driver</a></li>
+<li><a href="#613-device">6.1.3. device</a></li>
+</ul>
+</li>
+<li><a href="#62-&#x6CE8;&#x518C;&#x6D41;&#x7A0B;">6.2. &#x6CE8;&#x518C;&#x6D41;&#x7A0B;</a><ul>
+<li><a href="#621-bus&#x6CE8;&#x518C;">6.2.1. bus&#x6CE8;&#x518C;</a></li>
+<li><a href="#622-i2c_driver&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;">6.2.2. i2c_driver&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;</a></li>
+<li><a href="#623-&#x6784;&#x5EFA;i2c_client">6.2.3. &#x6784;&#x5EFA;i2c_client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1-&#x524D;&#x8A00;">1. &#x524D;&#x8A00;</h2>
+<p>Linux&#x8BBE;&#x5907;&#x6A21;&#x578B;&#xFF08;Driver Model&#xFF09;&#x4E3B;&#x8981;&#x5305;&#x542B;Bus&#x3001;Class&#x3001;Device&#x3001;Device_driver&#x56DB;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x8BBE;&#x5907;&#x6A21;&#x578B;&#x5C06;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x5F52;&#x7EB3;&#x3001;&#x5206;&#x7C7B;&#xFF0C;&#x7136;&#x540E;&#x62BD;&#x8C61;&#x51FA;&#x4E00;&#x5957;&#x6807;&#x51C6;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x63A5;&#x53E3;&#x3002;&#x9A71;&#x52A8;&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x5C31;&#x7B80;&#x5316;&#x4E3A;&#x5BF9;&#x5185;&#x6838;&#x6240;&#x89C4;&#x5B9A;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x586B;&#x5145;&#x548C;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x786C;&#x4EF6;&#x62D3;&#x6251;&#x7ED3;&#x6784;&#x793A;&#x4F8B;</p>
+<p><img src="imgs/hardware.png" alt="hardware.png"></p>
+<p>&#x786C;&#x4EF6;&#x62D3;&#x6251;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;Bus&#x3001;Class&#x3001;Device&#x4E09;&#x4E2A;&#x90E8;&#x5206;</p>
+<p><a href="http://www.wowotech.net/device_model/13.html" target="_blank">http://www.wowotech.net/device_model/13.html</a></p>
+<ul>
+<li><code>Bus</code> Linux&#x8BA4;&#x4E3A;&#x603B;&#x7EBF;&#x662F;CPU&#x548C;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x901A;&#x4FE1;&#x7684;&#x901A;&#x9053;&#xFF0C;&#x5728;&#x8BBE;&#x5907;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8BBE;&#x5907;&#x90FD;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x5230;&#x603B;&#x7EBF;&#x4E0A;&#xFF0C;&#x4E4B;&#x540E;&#x624D;&#x80FD;&#x548C;cpu&#x901A;&#x4FE1;&#x3002;<ul>
+<li>&#x4F46;&#x662F;&#x5BF9;&#x4E8E;&#x82AF;&#x7247;&#x5185;&#x4E00;&#x4E9B;&#x5916;&#x8BBE;&#x800C;&#x8A00;&#x662F;&#x76F4;&#x63A5;&#x548C;cpu&#x901A;&#x4FE1;&#x7684;&#xFF0C;&#x6BD4;&#x5982;cpu&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5BFB;&#x5740;&#x5230;uart&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x56E0;&#x6B64;&#x62BD;&#x8C61;&#x4E86;&#x4E00;&#x4E2A;<code>platform bus</code>&#x5C06;&#x8FD9;&#x4E9B;&#x8BBE;&#x5907;&#x6302;&#x4E0A;&#x53BB;</li>
+</ul>
+</li>
+<li><code>Class</code> &#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7A0B;&#x5E8F;&#x8BBE;&#x8BA1;&#x601D;&#x60F3;&#x4E2D;&#x7684;&#x7C7B;&#xFF0C;&#x5C06;&#x5177;&#x6709;&#x76F8;&#x4F3C;&#x529F;&#x80FD;&#x6216;&#x5C5E;&#x6027;&#x7684;&#x8BBE;&#x5907;&#x62BD;&#x8C61;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x62BD;&#x8C61;&#x51FA;&#x4E00;&#x5957;&#x53EF;&#x4EE5;&#x5728;&#x591A;&#x4E2A;&#x8BBE;&#x5907;&#x4E4B;&#x95F4;&#x5171;&#x7528;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x548C;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x3002;&#x56E0;&#x800C;&#x4ECE;&#x5C5E;&#x4E8E;&#x76F8;&#x540C;Class&#x7684;&#x8BBE;&#x5907;&#x7684;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#xFF0C;&#x5C31;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x91CD;&#x590D;&#x5B9A;&#x4E49;&#x8FD9;&#x4E9B;&#x516C;&#x5171;&#x8D44;&#x6E90;&#xFF0C;&#x76F4;&#x63A5;&#x4ECE;Class&#x4E2D;&#x7EE7;&#x627F;&#x5373;&#x53EF;&#x3002;</li>
+<li><code>Device</code> &#x62BD;&#x8C61;&#x7CFB;&#x7EDF;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#xFF0C;&#x63CF;&#x8FF0;&#x5B83;&#x7684;&#x540D;&#x5B57;&#x3001;&#x5C5E;&#x6027;&#x3001;&#x4ECE;&#x5C5E;&#x7684;Bus&#x3001;&#x4ECE;&#x5C5E;&#x7684;Class&#x7B49;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>Device_driver</code> Linux&#x8BBE;&#x5907;&#x6A21;&#x578B;&#x7528;Driver&#x62BD;&#x8C61;&#x786C;&#x4EF6;&#x8BBE;&#x5907;&#x7684;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#xFF0C;&#x5B83;&#x5305;&#x542B;&#x8BBE;&#x5907;&#x521D;&#x59CB;&#x5316;&#x3001;&#x7535;&#x6E90;&#x7BA1;&#x7406;&#x76F8;&#x5173;&#x7684;&#x63A5;&#x53E3;&#x5B9E;&#x73B0;&#x3002;&#x800C;Linux&#x5185;&#x6838;&#x4E2D;&#x7684;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF0C;&#x57FA;&#x672C;&#x90FD;&#x56F4;&#x7ED5;&#x8BE5;&#x62BD;&#x8C61;&#x8FDB;&#x884C;&#xFF08;&#x5B9E;&#x73B0;&#x6240;&#x89C4;&#x5B9A;&#x7684;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#xFF09;&#x3002;</li>
+</ul>
+<h3 id="11-&#x6838;&#x5FC3;&#x601D;&#x60F3;">1.1. &#x6838;&#x5FC3;&#x601D;&#x60F3;</h3>
+<ul>
+<li>bus&#x628A;device&#x548C;driver&#x8054;&#x7CFB;&#x8D77;&#x6765;&#xFF0C;device&#x89E3;&#x51B3;&#x201C;&#x6709;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;&#x53EF;&#x7528;&#x201D;&#x7684;&#x95EE;&#x9898;&#xFF0C;driver&#x89E3;&#x51B3;&#x201C;&#x600E;&#x4E48;&#x7528;&#x8FD9;&#x4E2A;&#x4E1C;&#x897F;&#x201D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x8FD9;&#x6837;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x5C31;&#x53D8;&#x6210;&#x4E86;&#x586B;&#x7A7A;&#x9898;</li>
+<li><code>Device</code>&#x548C;<code>Device_driver</code>&#x5339;&#x914D;&#x4E0A;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x6267;&#x884C;<code>Device_driver</code>&#x4E2D;&#x7684;&#x521D;&#x59CB;&#x5316;&#x51FD;&#x6570;&#xFF08;<code>probe</code>&#xFF09;&#xFF0C;&#x8BBE;&#x5907;&#x88AB;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4F9B;consumer&#x4F7F;&#x7528;<ul>
+<li>&#x5BF9;&#x4E8E;&#x70ED;&#x63D2;&#x62D4;&#x8BBE;&#x5907;&#x800C;&#x8A00;&#xFF0C;<code>Device_driver</code>&#x4E00;&#x76F4;&#x8FD0;&#x884C;&#x5728;&#x5185;&#x6838;&#x4E2D;&#x7B49;&#x5F85;&#x8BBE;&#x5907;&#x3002;&#x6CA1;&#x6709;&#x8BBE;&#x5907;&#x63D2;&#x5165;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6CA1;&#x6709;<code>Device</code>&#x7ED3;&#x6784;&#x4F53;&#x4FE1;&#x606F;&#xFF0C;&#x56E0;&#x6B64;<code>Driver</code>&#x4E5F;&#x5C31;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#xFF0C;&#x5F53;&#x8BBE;&#x5907;&#x63D2;&#x5165;&#xFF0C;&#x5185;&#x6838;&#x4F1A;&#x521B;&#x5EFA;<code>Device</code>&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x6B64;&#x65F6;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;<code>Driver</code>&#x6267;&#x884C;</li>
+</ul>
+</li>
+<li>&#x901A;&#x8FC7;<code>Bus---&gt;Device</code>&#x7684;&#x6811;&#x72B6;&#x7ED3;&#x6784;&#x89E3;&#x51B3;&#x8BBE;&#x5907;&#x76F4;&#x63A5;&#x7684;&#x4F9D;&#x8D56;&#xFF0C;&#x8981;&#x542F;&#x52A8;&#x67D0;&#x4E2A;&#x8BBE;&#x5907;&#xFF0C;&#x4F1A;&#x68C0;&#x67E5;&#x5B83;&#x4F9D;&#x8D56;&#x7684;&#x603B;&#x7EBF;&#x548C;&#x8BBE;&#x5907;&#xFF0C;&#x5148;&#x542F;&#x52A8;&#x4F9D;&#x8D56;&#x9879;&#x5728;&#x542F;&#x52A8;&#x8BBE;&#x5907;<ul>
+<li>&#x5728;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x4E2D;&#x660E;&#x786E;&#x8BBE;&#x5907;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x4E4B;&#x540E;&#x5185;&#x6838;&#x80FD;&#x81EA;&#x52A8;&#x5904;&#x7406;&#x542F;&#x52A8;&#x987A;&#x5E8F;</li>
+</ul>
+</li>
+<li>&#x901A;&#x8FC7;<code>Class</code>&#x62BD;&#x8C61;&#x5171;&#x6027;</li>
+</ul>
+<h2 id="2-&#x76F8;&#x5173;&#x6570;&#x636E;&#x7ED3;&#x6784;">2. &#x76F8;&#x5173;&#x6570;&#x636E;&#x7ED3;&#x6784;</h2>
+<p><code>struct device</code>&#x662F;&#x5185;&#x6838;&#x4E2D;&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x4F1A;&#x9488;&#x5BF9;&#x5177;&#x4F53;&#x7684;&#x8BBE;&#x5907;&#x518D;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x800C;<code>struct device</code>&#x4F5C;&#x4E3A;&#x5176;&#x4E00;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002;</p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct device - The basic device structure
+ * @parent:  The device&apos;s &quot;parent&quot; device, the device to which it is attached.
+ *     In most cases, a parent device is some sort of bus or host
+ *     controller. If parent is NULL, the device, is a top-level device,
+ *     which is not usually what you want.
+ * @p:    Holds the private data of the driver core portions of the device.
+ *     See the comment of the struct device_private for detail.
+ * @kobj:  A top-level, abstract class from which other classes are derived.
+ * @init_name:  Initial name of the device.
+ * @type:  The type of device.
+ *     This identifies the device type and carries type-specific
+ *     information.
+ * @mutex:  Mutex to synchronize calls to its driver.
+ * @bus:  Type of bus device is on.
+ * @driver:  Which driver has allocated this
+ * @platform_data: Platform data specific to the device.
+ *     Example: For devices on custom boards, as typical of embedded
+ *     and SOC based hardware, Linux often uses platform_data to point
+ *     to board-specific structures describing devices and how they
+ *     are wired.  That can include what ports are available, chip
+ *     variants, which GPIO pins act in what additional roles, and so
+ *     on.  This shrinks the &quot;Board Support Packages&quot; (BSPs) and
+ *     minimizes board-specific #ifdefs in drivers.
+ * @driver_data: Private pointer for driver specific info.
+ * @links:  Links to suppliers and consumers of this device.
+ * @power:  For device power management.
+ *    See Documentation/driver-api/pm/devices.rst for details.
+ * @pm_domain:  Provide callbacks that are executed during system suspend,
+ *     hibernation, system resume and during runtime PM transitions
+ *     along with subsystem-level and driver-level callbacks.
+ * @pins:  For device pin management.
+ *    See Documentation/driver-api/pinctl.rst for details.
+ * @msi_list:  Hosts MSI descriptors
+ * @msi_domain: The generic MSI domain this device is using.
+ * @numa_node:  NUMA node this device is close to.
+ * @dma_ops:    DMA mapping operations for this device.
+ * @dma_mask:  Dma mask (if dma&apos;ble device).
+ * @coherent_dma_mask: Like dma_mask, but for alloc_coherent mapping as not all
+ *     hardware supports 64-bit addresses for consistent allocations
+ *     such descriptors.
+ * @bus_dma_mask: Mask of an upstream bridge or bus which imposes a smaller DMA
+ *    limit than the device itself supports.
+ * @dma_pfn_offset: offset of DMA memory range relatively of RAM
+ * @dma_parms:  A low level driver may set these to teach IOMMU code about
+ *     segment limitations.
+ * @dma_pools:  Dma pools (if dma&apos;ble device).
+ * @dma_mem:  Internal for coherent mem override.
+ * @cma_area:  Contiguous memory area for dma allocations
+ * @archdata:  For arch-specific additions.
+ * @of_node:  Associated device tree node.
+ * @fwnode:  Associated device node supplied by platform firmware.
+ * @devt:  For creating the sysfs &quot;dev&quot;.
+ * @id:    device instance
+ * @devres_lock: Spinlock to protect the resource of the device.
+ * @devres_head: The resources list of the device.
+ * @knode_class: The node used to add the device to the class list.
+ * @class:  The class of the device.
+ * @groups:  Optional attribute groups.
+ * @release:  Callback to free the device after all references have
+ *     gone away. This should be set by the allocator of the
+ *     device (i.e. the bus driver that discovered the device).
+ * @iommu_group: IOMMU group the device belongs to.
+ * @iommu_fwspec: IOMMU-specific properties supplied by firmware.
+ *
+ * @offline_disabled: If set, the device is permanently online.
+ * @offline:  Set after successful invocation of bus type&apos;s .offline().
+ * @of_node_reused: Set if the device-tree node is shared with an ancestor
+ *              device.
+ *
+ * At the lowest level, every device in a Linux system is represented by an
+ * instance of struct device. The device structure contains the information
+ * that the device model core needs to model the system. Most subsystems,
+ * however, track additional information about the devices they host. As a
+ * result, it is rare for devices to be represented by bare device structures;
+ * instead, that structure, like kobject structures, is usually embedded within
+ * a higher-level representation of the device.
+ */</span>
+<span class="hljs-keyword">struct</span> device {
+  <span class="hljs-keyword">struct</span> device    *parent;   <span class="hljs-comment">//&#x7236;&#x8BBE;&#x5907;&#xFF0C;&#x4E00;&#x822C;&#x662F;bus&#x6216;&#x8005;controller</span>
+
+  <span class="hljs-keyword">struct</span> device_private  *p;  <span class="hljs-comment">//&#x8BBE;&#x5907;&#x7684;&#x79C1;&#x6709;&#x4FE1;&#x606F;</span>
+
+  <span class="hljs-keyword">struct</span> kobject kobj;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>    *init_name; <span class="hljs-comment">/* initial name of the device */</span>
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> device_type *type;
+
+  <span class="hljs-keyword">struct</span> mutex    mutex;  <span class="hljs-comment">/* mutex to synchronize calls to
+           * its driver.
+           */</span>
+
+  <span class="hljs-keyword">struct</span> bus_type  *bus;    <span class="hljs-comment">/* type of bus device is on */</span>
+  <span class="hljs-keyword">struct</span> device_driver *driver;  <span class="hljs-comment">/* which driver has allocated this
+             device */</span>
+  <span class="hljs-keyword">void</span>    *platform_data;  <span class="hljs-comment">/* Platform specific data, device
+             core doesn&apos;t touch it */</span>
+  <span class="hljs-keyword">void</span>    *driver_data;  <span class="hljs-comment">/* Driver data, set and get with
+             dev_set/get_drvdata */</span>
+  <span class="hljs-keyword">struct</span> dev_links_info  links;
+  <span class="hljs-keyword">struct</span> dev_pm_info  power;    <span class="hljs-comment">//&#x7535;&#x6E90;&#x7BA1;&#x7406;&#x76F8;&#x5173;</span>
+  <span class="hljs-keyword">struct</span> dev_pm_domain  *pm_domain;
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_GENERIC_MSI_IRQ_DOMAIN</span>
+  <span class="hljs-keyword">struct</span> irq_domain  *msi_domain;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_PINCTRL</span>
+  <span class="hljs-keyword">struct</span> dev_pin_info  *pins;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_GENERIC_MSI_IRQ</span>
+  <span class="hljs-keyword">struct</span> list_head  msi_list;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_NUMA</span>
+  <span class="hljs-keyword">int</span>    numa_node;  <span class="hljs-comment">/* NUMA node this device is close to */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> dma_map_ops *dma_ops;
+  u64    *dma_mask;  <span class="hljs-comment">/* dma mask (if dma&apos;able device) */</span>
+  u64    coherent_dma_mask;<span class="hljs-comment">/* Like dma_mask, but for
+               alloc_coherent mappings as
+               not all hardware supports
+               64 bit addresses for consistent
+               allocations such descriptors. */</span>
+  u64    bus_dma_mask;  <span class="hljs-comment">/* upstream dma_mask constraint */</span>
+  <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span>  dma_pfn_offset;
+
+  <span class="hljs-keyword">struct</span> device_dma_parameters *dma_parms;
+
+  <span class="hljs-keyword">struct</span> list_head  dma_pools;  <span class="hljs-comment">/* dma pools (if dma&apos;ble) */</span>
+
+  <span class="hljs-keyword">struct</span> dma_coherent_mem  *dma_mem; <span class="hljs-comment">/* internal for coherent mem
+               override */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_DMA_CMA</span>
+  <span class="hljs-keyword">struct</span> cma *cma_area;    <span class="hljs-comment">/* contiguous memory area for dma
+             allocations */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+  <span class="hljs-comment">/* arch specific additions */</span>
+  <span class="hljs-keyword">struct</span> dev_archdata  archdata;
+
+  <span class="hljs-keyword">struct</span> device_node  *of_node; <span class="hljs-comment">/* associated device tree node */</span>
+  <span class="hljs-keyword">struct</span> fwnode_handle  *fwnode; <span class="hljs-comment">/* firmware device node */</span>
+
+  <span class="hljs-keyword">dev_t</span>      devt;  <span class="hljs-comment">/* dev_t, creates the sysfs &quot;dev&quot; */</span>
+  u32      id;  <span class="hljs-comment">/* device instance */</span>
+
+  <span class="hljs-keyword">spinlock_t</span>    devres_lock;
+  <span class="hljs-keyword">struct</span> list_head  devres_head;
+
+  <span class="hljs-keyword">struct</span> klist_node  knode_class;
+  <span class="hljs-keyword">struct</span> <span class="hljs-keyword">class</span>    *<span class="hljs-keyword">class</span>;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> attribute_group **groups;  <span class="hljs-comment">/* optional groups */</span>
+
+  <span class="hljs-keyword">void</span>  (*release)(<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">struct</span> iommu_group  *iommu_group;
+  <span class="hljs-keyword">struct</span> iommu_fwspec  *iommu_fwspec;
+
+  <span class="hljs-keyword">bool</span>      offline_disabled:<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">bool</span>      offline:<span class="hljs-number">1</span>;
+  <span class="hljs-keyword">bool</span>      of_node_reused:<span class="hljs-number">1</span>;
+};
+</code></pre>
+<p><code>struct device_driver</code>&#x662F;&#x5185;&#x6838;&#x4E2D;&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;<code>include/linux/device.h</code></p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct device_driver - The basic device driver structure
+ * @name:  Name of the device driver.
+ * @bus:  The bus which the device of this driver belongs to.
+ * @owner:  The module owner.
+ * @mod_name:  Used for built-in modules.
+ * @suppress_bind_attrs: Disables bind/unbind via sysfs.
+ * @probe_type:  Type of the probe (synchronous or asynchronous) to use.
+ * @of_match_table: The open firmware table.
+ * @acpi_match_table: The ACPI match table.
+ * @probe:  Called to query the existence of a specific device,
+ *    whether this driver can work with it, and bind the driver
+ *    to a specific device.
+ * @remove:  Called when the device is removed from the system to
+ *    unbind a device from this driver.
+ * @shutdown:  Called at shut-down time to quiesce the device.
+ * @suspend:  Called to put the device to sleep mode. Usually to a
+ *    low power state.
+ * @resume:  Called to bring a device from sleep mode.
+ * @groups:  Default attributes that get created by the driver core
+ *    automatically.
+ * @pm:    Power management operations of the device which matched
+ *    this driver.
+ * @coredump:  Called when sysfs entry is written to. The device driver
+ *    is expected to call the dev_coredump API resulting in a
+ *    uevent.
+ * @p:    Driver core&apos;s private data, no one other than the driver
+ *    core can touch this.
+ *
+ * The device driver-model tracks all of the drivers known to the system.
+ * The main reason for this tracking is to enable the driver core to match
+ * up drivers with new devices. Once drivers are known objects within the
+ * system, however, a number of other things become possible. Device drivers
+ * can export information and configuration variables that are independent
+ * of any specific device.
+ */</span>
+<span class="hljs-keyword">struct</span> device_driver {
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>    *name;
+  <span class="hljs-keyword">struct</span> bus_type    *bus;
+
+  <span class="hljs-keyword">struct</span> module    *owner;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>    *mod_name;  <span class="hljs-comment">/* used for built-in modules */</span>
+
+  <span class="hljs-keyword">bool</span> suppress_bind_attrs;  <span class="hljs-comment">/* disables bind/unbind via sysfs */</span>
+  <span class="hljs-keyword">enum</span> probe_type probe_type;
+
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> of_device_id  *of_match_table;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> acpi_device_id  *acpi_match_table;
+
+  <span class="hljs-keyword">int</span> (*probe) (<span class="hljs-keyword">struct</span> device *dev);    <span class="hljs-comment">//&#x68C0;&#x6D4B;&#x5230;&#x8BBE;&#x5907;&#x6267;&#x884C;</span>
+  <span class="hljs-keyword">int</span> (*remove) (<span class="hljs-keyword">struct</span> device *dev);   <span class="hljs-comment">//&#x8BBE;&#x5907;&#x79FB;&#x9664;&#x65F6;&#x6267;&#x884C;</span>
+  <span class="hljs-keyword">void</span> (*shutdown) (<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">int</span> (*suspend) (<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">pm_message_t</span> state);
+  <span class="hljs-keyword">int</span> (*resume) (<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> attribute_group **groups;
+
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> dev_pm_ops *pm;
+  <span class="hljs-keyword">void</span> (*coredump) (<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">struct</span> driver_private *p;
+};
+</code></pre>
+<h2 id="3-&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x57FA;&#x672C;&#x6B65;&#x9AA4;">3. &#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x57FA;&#x672C;&#x6B65;&#x9AA4;</h2>
+<p>&#x5728;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x6A21;&#x578B;&#x6846;&#x67B6;&#x4E0B;&#xFF0C;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x4E3B;&#x8981;&#x5206;&#x4E24;&#x6B65;</p>
+<ul>
+<li>&#x5206;&#x914D;&#x4E00;&#x4E2A;<code>struct device</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x586B;&#x5145;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x628A;&#x5B83;&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#x4E2D;&#x3002;</li>
+<li>&#x5206;&#x914D;&#x4E00;&#x4E2A;<code>struct device_driver</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x586B;&#x5145;&#x5FC5;&#x8981;&#x7684;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x628A;&#x5B83;&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#x4E2D;&#x3002;</li>
+</ul>
+<p>&#x8FD9;&#x4E24;&#x6B65;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5185;&#x6838;&#x4F1A;&#x5728;&#x5408;&#x9002;&#x7684;&#x65F6;&#x673A;&#xFF0C;&#x8C03;&#x7528;<code>struct device_driver</code>&#x53D8;&#x91CF;&#x4E2D;&#x7684;<code>probe</code>&#x3001;<code>remove</code>&#x3001;<code>suspend</code>&#x3001;<code>resume</code>&#x7B49;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x89E6;&#x53D1;&#x6216;&#x8005;&#x7EC8;&#x7ED3;&#x8BBE;&#x5907;&#x9A71;&#x52A8;&#x7684;&#x6267;&#x884C;&#x3002;&#x800C;&#x6240;&#x6709;&#x7684;&#x9A71;&#x52A8;&#x7A0B;&#x5E8F;&#x903B;&#x8F91;&#xFF0C;&#x90FD;&#x4F1A;&#x7531;&#x8FD9;&#x4E9B;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF0C;&#x6B64;&#x65F6;&#xFF0C;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x8005;&#x773C;&#x4E2D;&#x4FBF;&#x4E0D;&#x518D;&#x6709;&#x201C;&#x8BBE;&#x5907;&#x6A21;&#x578B;&#x201D;&#xFF0C;&#x8F6C;&#x800C;&#x53EA;&#x5173;&#x5FC3;&#x9A71;&#x52A8;&#x672C;&#x8EAB;&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<ul>
+<li>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>struct device</code>&#x548C;<code>struct device_driver</code>&#x90FD;&#x4F1A;&#x88AB;&#x518D;&#x5305;&#x88C5;&#x4E00;&#x6B21;&#x6216;&#x51E0;&#x6B21;&#xFF0C;&#x9488;&#x5BF9;&#x5177;&#x4F53;&#x8BBE;&#x5907;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x5C01;&#x88C5;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x5185;&#x6838;&#x63D0;&#x4F9B;&#x4E00;&#x4E9B;&#x5BF9;<code>struct device</code>&#x64CD;&#x4F5C;&#x7684;api&#xFF0C;&#x4E3B;&#x8981;&#x5728;<code>drivers/base/core.c</code><ul>
+<li>&#x5982;<code>device_initialize</code>&#x521D;&#x59CB;&#x5316;&#xFF0C;<code>device_register</code>&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#xFF0C;<code>device_create</code>&#x5206;&#x914D;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;+&#x521D;&#x59CB;&#x5316;+&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#x3002;</li>
+</ul>
+</li>
+<li><code>device</code>&#x548C;<code>device_driver</code>&#x5FC5;&#x987B;&#x5177;&#x5907;&#x76F8;&#x540C;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x5185;&#x6838;&#x624D;&#x80FD;&#x5B8C;&#x6210;&#x5339;&#x914D;&#x64CD;&#x4F5C;&#xFF0C;&#x8FDB;&#x800C;&#x8C03;&#x7528;<code>device_driver</code>&#x4E2D;&#x7684;&#x76F8;&#x5E94;&#x63A5;&#x53E3;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x540C;&#x540D;&#xFF0C;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x662F;&#x540C;&#x4E00;&#x4E2A;<code>bus</code>&#x4E0B;&#x7684;&#x6240;&#x6709;<code>device</code>&#x548C;<code>device_driver</code><ul>
+<li>???????? dts&#x4E2D;&#x7684;<code>compatible</code>&#x5C5E;&#x6027;&#x548C;&#x8FD9;&#x91CC;&#x63D0;&#x5230;&#x7684;&#x76F8;&#x540C;&#x540D;&#x5B57;&#x662F;&#x4EC0;&#x4E48;&#x5173;&#x7CFB;</li>
+</ul>
+</li>
+<li><code>device</code>&#x548C;<code>device_driver</code>&#x9700;&#x8981;&#x6302;&#x5728;&#x540C;&#x4E00;&#x4E2A;<code>bus</code>&#x4E0B;</li>
+<li>driver&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x5728;<code>struct device</code>&#x53D8;&#x91CF;&#x4E2D;&#xFF0C;&#x4FDD;&#x5B58;&#x63CF;&#x8FF0;&#x8BBE;&#x5907;&#x7279;&#x5F81;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x5BFB;&#x5740;&#x7A7A;&#x95F4;&#x3001;&#x4F9D;&#x8D56;&#x7684;GPIOs&#x7B49;&#xFF0C;&#x56E0;&#x4E3A;<code>device</code>&#x6307;&#x9488;&#x4F1A;&#x5728;&#x6267;&#x884C;<code>probe</code>&#x7B49;&#x63A5;&#x53E3;&#x65F6;&#x4F20;&#x5165;&#xFF0C;&#x8FD9;&#x65F6;<code>driver</code>&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#xFF0C;&#x6267;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x903B;&#x8F91;&#x64CD;&#x4F5C;&#x4E86;&#x3002;</li>
+</ul>
+<h2 id="4-probe">4. probe</h2>
+<p>&#x8BBE;&#x5907;&#x7684;<code>probe</code>&#x7531;<code>bus</code>&#x5B8C;&#x6210;&#xFF1B;&#x6BCF;&#x4E2A;<code>bus</code>&#x90FD;&#x6709;&#x4E00;&#x4E2A;<code>drivers_autoprobe</code>&#x53D8;&#x91CF;&#xFF0C;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x63A7;&#x5236;<code>bus</code>&#x7684;&#x884C;&#x4E3A;&#xFF08;&#x662F;&#x5426;&#x9700;&#x8981;&#x81EA;&#x52A8;probe&#xFF09;</p>
+<ul>
+<li>&#x5C06;<code>struct device</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#x4E2D;&#x65F6;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#xFF08;<code>device_register</code>&#xFF0C;<code>device_add</code>&#xFF0C;<code>device_create_vargs</code>&#xFF0C;<code>device_create</code>&#xFF09;</li>
+<li>&#x5C06;<code>struct device_driver</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x6CE8;&#x518C;&#x5230;&#x5185;&#x6838;&#x4E2D;&#x65F6;&#x81EA;&#x52A8;&#x89E6;&#x53D1;&#xFF08;<code>driver_register</code>&#xFF09;</li>
+<li>&#x624B;&#x52A8;&#x67E5;&#x627E;&#x540C;&#x4E00;<code>bus</code>&#x4E0B;&#x7684;&#x6240;&#x6709;<code>device_driver</code>&#xFF0C;&#x5982;&#x679C;&#x6709;&#x548C;&#x6307;&#x5B9A;<code>device</code>&#x540C;&#x540D;&#x7684;<code>driver</code>&#xFF0C;&#x6267;&#x884C;probe&#x64CD;&#x4F5C;&#xFF08;<code>device_attach</code>&#xFF09;</li>
+<li>&#x624B;&#x52A8;&#x67E5;&#x627E;&#x540C;&#x4E00;<code>bus</code>&#x4E0B;&#x7684;&#x6240;&#x6709;<code>device</code>&#xFF0C;&#x5982;&#x679C;&#x6709;&#x548C;&#x6307;&#x5B9A;<code>driver</code>&#x540C;&#x540D;&#x7684;<code>device</code>&#xFF0C;&#x6267;&#x884C;probe&#x64CD;&#x4F5C;&#xFF08;<code>driver_attach</code>&#xFF09;</li>
+<li>&#x81EA;&#x884C;&#x8C03;&#x7528;driver&#x7684;probe&#x63A5;&#x53E3;&#xFF0C;&#x5E76;&#x5728;&#x8BE5;&#x63A5;&#x53E3;&#x4E2D;&#x5C06;&#x8BE5;driver&#x7ED1;&#x5B9A;&#x5230;&#x67D0;&#x4E2A;device&#x7ED3;&#x6784;&#x4E2D;&#xFF0C;&#x5373;&#x8BBE;&#x7F6E;dev-&gt;driver&#xFF08;<code>device_bind_driver</code>&#xFF09;</li>
+</ul>
+<!-- 关于probe，既然probe执行是由bus控制，compatible在dtb中，这里是不是可以认为
+需要device和driver名字匹配，那为什么在probe函数中还会有关于dtb的解析？
+dtb是描述device的文件，那不应该在probe执行之前就已经创建好device了么，
+还是说dtb在加载的时候就已经根据dtb的结构创建好了骨架，只包含了name等属性？？那在probe函数中应该就是只需要在向之前创建好的device中追加信息即可，那为什么代码里写的是重新申请资源？ -->
+<h2 id="5-platform&#x9A71;&#x52A8;&#x6A21;&#x578B;">5. platform&#x9A71;&#x52A8;&#x6A21;&#x578B;</h2>
+<h2 id="6-i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;">6. i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;</h2>
+<p><a href="https://www.eet-china.com/mp/a34101.html" target="_blank">https://www.eet-china.com/mp/a34101.html</a></p>
+<p>&#x5BF9;&#x4E8E;i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;&#x800C;&#x8A00;</p>
+<p><img src="imgs/i2c.png" alt="i2c.png"></p>
+<ul>
+<li>Bus&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x53D8;&#x91CF;<code>struct bus_type i2c_bus_type</code></li>
+<li>Driver&#x662F;<code>struct i2c_driver</code>&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;</li>
+<li>Device&#x662F;<code>struct i2c_client</code>&#xFF0C;&#x4F46;&#x4E00;&#x822C;&#x4F1A;&#x5BF9;<code>i2c_client</code>&#x5728;&#x5C01;&#x88C5;&#x4E00;&#x5C42;<ul>
+<li>&#x6BD4;&#x5982;<code>struct ov5645</code>&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4E2D;&#x6709;<code>struct i2c_client</code></li>
+</ul>
+</li>
+</ul>
+<!-- 同时，i2c驱动模型中的Bus同时也是一个platform设备，也有对应的platform driver（`drivers/i2c/busses/i2c-riic.c`）？？？好像不太对
+这里的i2c_adapter就是platform？？？ -->
+<p>&#x600E;&#x4E48;&#x7406;&#x89E3;<a href="https://kernel.meizu.com/device-tree.html" target="_blank">https://kernel.meizu.com/device-tree.html</a>&#x7684;3.2.2 mt_i2c_driver</p>
+<p>&#x56E0;&#x4E3A;&#x7B2C;1&#x7EA7;&#x5B50;&#x8282;&#x70B9;&#x4F1A;&#x88AB;&#x6CE8;&#x518C;&#x6210;platform device&#xFF0C;&#x4F8B;&#x5982;i2c/spi&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x90A3;&#x4E48;&#x5BF9;&#x5E94;&#x4E5F;&#x9700;&#x8981;&#x6CE8;&#x518C;platform driver&#x3002;&#x4EE5;i2c&#x63A7;&#x5236;&#x5668;&#x9A71;&#x52A8;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<ul>
+<li>&#x63A7;&#x5236;&#x5668;&#x9996;&#x5148;&#x4F1A;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;platform driver&#xFF0C;&#x628A;adapter&#x6CE8;&#x518C;&#x6210;i2c device&#xFF1B;<ul>
+<li>&#x600E;&#x4E48;&#x7406;&#x89E3;<code>&#x63A7;&#x5236;&#x5668;&#x521B;&#x5EFA;</code></li>
+<li>&#x8FD9;&#x91CC;&#x7684; <code>i2c device</code>&#x662F;&#x4EC0;&#x4E48;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1F;&#x8FD9;&#x91CC;&#x4E0D;&#x5E94;&#x8BE5;&#x662F;&#x628A;adapter&#x6CE8;&#x518C;&#x6210;</li>
+</ul>
+</li>
+<li>&#x5728;adapter&#x7684;probe&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;of_i2c_register_devices()&#x51FD;&#x6570;&#x904D;&#x5386;&#x63A7;&#x5236;&#x5668;&#x4E0B;&#x6302;&#x7684;i2c&#x8BBE;&#x5907;&#x7684;DTS&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x6CE8;&#x518C;&#x6210;i2c_client&#xFF1B;</li>
+</ul>
+<h3 id="61-&#x6570;&#x636E;&#x7ED3;&#x6784;">6.1. &#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<h4 id="611-bus">6.1.1. bus</h4>
+<p>kernel&#x901A;&#x8FC7;<code>struct bus_type</code>&#x7ED3;&#x6784;&#x4F53;&#x6765;&#x7EF4;&#x62A4;bus <code>include/linux/device.h</code></p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct bus_type - The bus type of the device
+ *
+ * @name:  The name of the bus.
+ * @dev_name:  Used for subsystems to enumerate devices like (&quot;foo%u&quot;, dev-&gt;id).
+ * @dev_root:  Default device to use as the parent.
+ * @bus_groups:  Default attributes of the bus.
+ * @dev_groups:  Default attributes of the devices on the bus.
+ * @drv_groups: Default attributes of the device drivers on the bus.
+ * @match:  Called, perhaps multiple times, whenever a new device or driver
+ *    is added for this bus. It should return a positive value if the
+ *    given device can be handled by the given driver and zero
+ *    otherwise. It may also return error code if determining that
+ *    the driver supports the device is not possible. In case of
+ *    -EPROBE_DEFER it will queue the device for deferred probing.
+ * @uevent:  Called when a device is added, removed, or a few other things
+ *    that generate uevents to add the environment variables.
+ * @probe:  Called when a new device or driver add to this bus, and callback
+ *    the specific driver&apos;s probe to initial the matched device.
+ * @remove:  Called when a device removed from this bus.
+ * @shutdown:  Called at shut-down time to quiesce the device.
+ *
+ * @online:  Called to put the device back online (after offlining it).
+ * @offline:  Called to put the device offline for hot-removal. May fail.
+ *
+ * @suspend:  Called when a device on this bus wants to go to sleep mode.
+ * @resume:  Called to bring a device on this bus out of sleep mode.
+ * @num_vf:  Called to find out how many virtual functions a device on this
+ *    bus supports.
+ * @dma_configure:  Called to setup DMA configuration on a device on
+ *      this bus.
+ * @pm:    Power management operations of this bus, callback the specific
+ *    device driver&apos;s pm-ops.
+ * @iommu_ops:  IOMMU specific operations for this bus, used to attach IOMMU
+ *              driver implementations to a bus and allow the driver to do
+ *              bus-specific setup
+ * @p:    The private data of the driver core, only the driver core can
+ *    touch this.
+ * @lock_key:  Lock class key for use by the lock validator
+ * @need_parent_lock:  When probing or removing a device on this bus, the
+ *      device core should lock the device&apos;s parent.
+ *
+ * A bus is a channel between the processor and one or more devices. For the
+ * purposes of the device model, all devices are connected via a bus, even if
+ * it is an internal, virtual, &quot;platform&quot; bus. Buses can plug into each other.
+ * A USB controller is usually a PCI device, for example. The device model
+ * represents the actual connections between buses and the devices they control.
+ * A bus is represented by the bus_type structure. It contains the name, the
+ * default attributes, the bus&apos; methods, PM operations, and the driver core&apos;s
+ * private data.
+ */</span>
+<span class="hljs-keyword">struct</span> bus_type {
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>    *name;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>    *dev_name;
+  <span class="hljs-keyword">struct</span> device    *dev_root;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> attribute_group **bus_groups;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> attribute_group **dev_groups;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> attribute_group **drv_groups;
+
+  <span class="hljs-keyword">int</span> (*match)(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">struct</span> device_driver *drv);
+  <span class="hljs-keyword">int</span> (*uevent)(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">struct</span> kobj_uevent_env *env);
+  <span class="hljs-keyword">int</span> (*probe)(<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">int</span> (*remove)(<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">void</span> (*shutdown)(<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">int</span> (*online)(<span class="hljs-keyword">struct</span> device *dev);
+  <span class="hljs-keyword">int</span> (*offline)(<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">int</span> (*suspend)(<span class="hljs-keyword">struct</span> device *dev, <span class="hljs-keyword">pm_message_t</span> state);
+  <span class="hljs-keyword">int</span> (*resume)(<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">int</span> (*num_vf)(<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">int</span> (*dma_configure)(<span class="hljs-keyword">struct</span> device *dev);
+
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> dev_pm_ops *pm;
+
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> iommu_ops *iommu_ops;
+
+  <span class="hljs-keyword">struct</span> subsys_private *p;
+  <span class="hljs-keyword">struct</span> lock_class_key lock_key;
+
+  <span class="hljs-keyword">bool</span> need_parent_lock;
+};
+</code></pre>
+<p>i2c_bus_type</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> bus_type i2c_bus_type = {
+  .name    = <span class="hljs-string">&quot;i2c&quot;</span>,
+  .match    = i2c_device_match,     <span class="hljs-comment">//&#x5224;&#x65AD;&#x4F20;&#x5165;&#x7684; device&#x548C;driver&#x662F;&#x5426;&#x5339;&#x914D;</span>
+  .probe    = i2c_device_probe,
+  .remove    = i2c_device_remove,
+  .shutdown  = i2c_device_shutdown,
+};
+EXPORT_SYMBOL_GPL(i2c_bus_type);
+</code></pre>
+<ul>
+<li>probe&#xFF0C;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;driver&#xFF08;struct i2c_driver&#xFF09;&#x6216;&#x8005;&#x4E00;&#x4E2A;device&#xFF08;struct i2c_client&#xFF09;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5148;&#x901A;&#x8FC7;match&#x5339;&#x914D;&#xFF0C;&#x5982;&#x679C;&#x6210;&#x529F;&#x5C31;&#x8C03;&#x7528;driver&#x4E2D;&#x7684;probe&#x51FD;&#x6570;</li>
+<li>remove&#xFF0C;&#x5F53;&#x5378;&#x8F7D;driver&#x6216;&#x8005;device&#x65F6;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;remove&#x6765;&#x91CA;&#x653E;&#x76F8;&#x5E94;&#x8D44;&#x6E90;</li>
+</ul>
+<p>&#x5728;<code>drivers/i2c/i2c-core-base.c</code>&#x7684;<code>i2c_init()</code>&#x4E2D;&#x6709;<code>retval = bus_register(&amp;i2c_bus_type);</code>&#xFF0C;&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;i2c&#x603B;&#x7EBF;</p>
+<p>kernel&#x603B;&#x7EBF;&#x7EF4;&#x62A4;&#x9A71;&#x52A8;&#x94FE;&#x8868;&#x3001;&#x8BBE;&#x5907;&#x94FE;&#x8868;&#x4E24;&#x4E2A;&#x94FE;&#x8868;&#xFF0C;<code>i2c_driver</code>&#x4E2D;&#x7684;<code>struct list_head clients;</code>&#x548C;<code>i2c_client</code>&#x4E2D;&#x7684;<code>struct list_head detected;</code>&#x662F;&#x94FE;&#x8868;&#x9879;&#xFF08;&#x94FE;&#x8868;&#x6CE8;&#x610F;container_of&#x5B8F;&#xFF09;</p>
+<h4 id="612-driver">6.1.2. driver</h4>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct i2c_driver - represent an I2C device driver
+ * @class: What kind of i2c device we instantiate (for detect)
+ * @probe: Callback for device binding - soon to be deprecated
+ * @probe_new: New callback for device binding
+ * @remove: Callback for device unbinding
+ * @shutdown: Callback for device shutdown
+ * @alert: Alert callback, for example for the SMBus alert protocol
+ * @command: Callback for bus-wide signaling (optional)
+ * @driver: Device driver model driver
+ * @id_table: List of I2C devices supported by this driver
+ * @detect: Callback for device detection
+ * @address_list: The I2C addresses to probe (for detect)
+ * @clients: List of detected clients we created (for i2c-core use only)
+ * @disable_i2c_core_irq_mapping: Tell the i2c-core to not do irq-mapping
+ *
+ * The driver.owner field should be set to the module owner of this driver.
+ * The driver.name field should be set to the name of this driver.
+ *
+ * For automatic device detection, both @detect and @address_list must
+ * be defined. @class should also be set, otherwise only devices forced
+ * with module parameters will be created. The detect function must
+ * fill at least the name field of the i2c_board_info structure it is
+ * handed upon successful detection, and possibly also the flags field.
+ *
+ * If @detect is missing, the driver will still work fine for enumerated
+ * devices. Detected devices simply won&apos;t be supported. This is expected
+ * for the many I2C/SMBus devices which can&apos;t be detected reliably, and
+ * the ones which can always be enumerated in practice.
+ *
+ * The i2c_client structure which is handed to the @detect callback is
+ * not a real i2c_client. It is initialized just enough so that you can
+ * call i2c_smbus_read_byte_data and friends on it. Don&apos;t do anything
+ * else with it. In particular, calling dev_dbg and friends on it is
+ * not allowed.
+ */</span>
+<span class="hljs-keyword">struct</span> i2c_driver {
+  <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> <span class="hljs-keyword">class</span>;
+
+  <span class="hljs-comment">/* Standard driver model interfaces */</span>
+  <span class="hljs-keyword">int</span> (*probe)(<span class="hljs-keyword">struct</span> i2c_client *, <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> i2c_device_id *);
+  <span class="hljs-keyword">int</span> (*remove)(<span class="hljs-keyword">struct</span> i2c_client *);
+
+  <span class="hljs-comment">/* New driver model interface to aid the seamless removal of the
+   * current probe()&apos;s, more commonly unused than used second parameter.
+   */</span>
+  <span class="hljs-keyword">int</span> (*probe_new)(<span class="hljs-keyword">struct</span> i2c_client *);
+
+  <span class="hljs-comment">/* driver model interfaces that don&apos;t relate to enumeration  */</span>
+  <span class="hljs-keyword">void</span> (*shutdown)(<span class="hljs-keyword">struct</span> i2c_client *);
+
+  <span class="hljs-comment">/* Alert callback, for example for the SMBus alert protocol.
+   * The format and meaning of the data value depends on the protocol.
+   * For the SMBus alert protocol, there is a single bit of data passed
+   * as the alert response&apos;s low bit (&quot;event flag&quot;).
+   * For the SMBus Host Notify protocol, the data corresponds to the
+   * 16-bit payload data reported by the slave device acting as master.
+   */</span>
+  <span class="hljs-keyword">void</span> (*alert)(<span class="hljs-keyword">struct</span> i2c_client *, <span class="hljs-keyword">enum</span> i2c_alert_protocol protocol,
+          <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> data);
+
+  <span class="hljs-comment">/* a ioctl like command that can be used to perform specific functions
+   * with the device.
+   */</span>
+  <span class="hljs-keyword">int</span> (*command)(<span class="hljs-keyword">struct</span> i2c_client *client, <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> cmd, <span class="hljs-keyword">void</span> *arg);
+
+  <span class="hljs-keyword">struct</span> device_driver driver;
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">struct</span> i2c_device_id *id_table;
+
+  <span class="hljs-comment">/* Device detection callback for automatic device creation */</span>
+  <span class="hljs-keyword">int</span> (*detect)(<span class="hljs-keyword">struct</span> i2c_client *, <span class="hljs-keyword">struct</span> i2c_board_info *);
+  <span class="hljs-keyword">const</span> <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">short</span> *address_list;
+  <span class="hljs-keyword">struct</span> list_head clients;
+
+  <span class="hljs-keyword">bool</span> disable_i2c_core_irq_mapping;
+};
+</code></pre>
+<h4 id="613-device">6.1.3. device</h4>
+<p>device_node &#x662F;&#x4ECE;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x89E3;&#x6790;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x9700;&#x8981;&#x8F6C;&#x6362;&#x4E3A;device&#xFF08;&#x5982;platfrom_device&#xFF0C;i2c_client&#x7B49;&#xFF09;</p>
+<pre><code class="lang-c"><span class="hljs-comment">/**
+ * struct i2c_client - represent an I2C slave device
+ * @flags: I2C_CLIENT_TEN indicates the device uses a ten bit chip address;
+ *  I2C_CLIENT_PEC indicates it uses SMBus Packet Error Checking
+ * @addr: Address used on the I2C bus connected to the parent adapter.
+ * @name: Indicates the type of the device, usually a chip name that&apos;s
+ *  generic enough to hide second-sourcing and compatible revisions.
+ * @adapter: manages the bus segment hosting this I2C device
+ * @dev: Driver model device node for the slave.
+ * @irq: indicates the IRQ generated by this device (if any)
+ * @detected: member of an i2c_driver.clients list or i2c-core&apos;s
+ *  userspace_devices list
+ * @slave_cb: Callback when I2C slave mode of an adapter is used. The adapter
+ *  calls it to pass on slave events to the slave driver.
+ *
+ * An i2c_client identifies a single device (i.e. chip) connected to an
+ * i2c bus. The behaviour exposed to Linux is defined by the driver
+ * managing the device.
+ */</span>
+<span class="hljs-keyword">struct</span> i2c_client {
+  <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">short</span> flags;    <span class="hljs-comment">/* div., see below    */</span>
+  <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">short</span> addr;    <span class="hljs-comment">/* chip address - <span class="hljs-doctag">NOTE:</span> 7bit  */</span>
+          <span class="hljs-comment">/* addresses are stored in the  */</span>
+          <span class="hljs-comment">/* _LOWER_ 7 bits    */</span>
+  <span class="hljs-keyword">char</span> name[I2C_NAME_SIZE];
+  <span class="hljs-keyword">struct</span> i2c_adapter *adapter;  <span class="hljs-comment">/* the adapter we sit on  */</span>
+  <span class="hljs-keyword">struct</span> device dev;    <span class="hljs-comment">/* the device structure    */</span>
+  <span class="hljs-keyword">int</span> init_irq;      <span class="hljs-comment">/* irq set at initialization  */</span>
+  <span class="hljs-keyword">int</span> irq;      <span class="hljs-comment">/* irq issued by device    */</span>
+  <span class="hljs-keyword">struct</span> list_head detected;
+<span class="hljs-meta">#<span class="hljs-meta-keyword">if</span> IS_ENABLED(CONFIG_I2C_SLAVE)</span>
+  <span class="hljs-keyword">i2c_slave_cb_t</span> slave_cb;  <span class="hljs-comment">/* callback for slave mode  */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+};
+</code></pre>
+<h3 id="62-&#x6CE8;&#x518C;&#x6D41;&#x7A0B;">6.2. &#x6CE8;&#x518C;&#x6D41;&#x7A0B;</h3>
+<ul>
+<li>&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;&#x5B8C;bus&#x4E4B;&#x540E;&#xFF0C;&#x53EA;&#x662F;&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x603B;&#x7EBF;&#xFF0C;&#x603B;&#x7EBF;&#x4E0A;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8BBE;&#x5907;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x5411;&#x4E0A;&#x9762;&#x6CE8;&#x518C;<code>i2c_adapter</code>&#x548C;&#x5176;&#x4ED6;&#x7684;<code>i2c_client</code>&#xFF0C;<ul>
+<li>&#x5176;&#x4E2D;<code>i2c_adapter</code>&#x662F;&#x4E3B;&#x8BBE;&#x5907;&#xFF0C;<code>i2c_client</code>&#x662F;&#x4ECE;&#x8BBE;&#x5907;</li>
+<li>&#x8FD9;&#x4E2A;&#x4E0D;&#x51C6;&#x786E;&#xFF1F;&#x8FD9;&#x91CC;&#x6CE8;&#x518C;&#x7684; bustype&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x4EC0;&#x4E48;&#x4E1C;&#x897F;</li>
+</ul>
+</li>
+<li>&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x5173;&#x4E8E;i2c&#x8282;&#x70B9;&#x7684;&#x63CF;&#x8FF0;&#xFF0C;&#x5185;&#x6838;&#x4F1A;&#x4E3A;&#x5176;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>platform device</code>&#x5728;platform bus&#x4E2D;&#xFF0C;&#x4F1A;&#x6839;&#x636E;<code>compatible</code>&#x5339;&#x914D;&#x5230;&#x76F8;&#x5E94;&#x7684;&#x9A71;&#x52A8;<code>drivers/i2c/busses/i2c-riic.c</code><ul>
+<li>&#x5728;i2c&#x7684;platform&#x9A71;&#x52A8;&#xFF08;&#x603B;&#x7EBF;&#x9A71;&#x52A8;&#xFF1F;&#xFF09;&#x7684;probe&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x4F1A;&#x521B;&#x5EFA;<code>i2c_adapter</code>&#x8BBE;&#x5907;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;<code>ret = i2c_add_adapter(adap);</code>&#x6DFB;&#x52A0;&#x5230;i2c&#x603B;&#x7EBF;&#x4E2D;&#x3002;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x5199;&#x4E86;3&#x4E2A;i2c&#x8282;&#x70B9;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x4F1A;&#x6267;&#x884C;3&#x904D;<ul>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x662F;&#x628A;&#x5F53;&#x524D;&#x7684;i2c_adapter&#x6DFB;&#x52A0;&#x5230;&#x54EA;&#x4E2A;i2c&#x603B;&#x7EBF;&#x4E2D;&#xFF1F;&#x8FD8;&#x662F;&#x8BF4;&#x5BF9;&#x4E8E;linux&#x6765;&#x8BF4;&#x4E00;&#x4E2A;i2c_adapter&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x603B;&#x7EBF;&#xFF1F;&#x90A3;i2c_add_adapter()&#xFF0C;&#x662F;&#x628A;adapter&#x6DFB;&#x52A0;&#x5230;&#x4E86;&#x54EA;&#x91CC;&#xFF1F;</li>
+<li>&#x5982;&#x679C;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;i2c_adapter&#x5C31;&#x4EE3;&#x8868;&#x4E00;&#x6761;i2c&#x603B;&#x7EBF;&#xFF0C;linux&#x4E2D;&#x7528;i2c_adapter&#x6765;&#x533A;&#x5206;&#x4E0D;&#x540C;i2c bus&#xFF0C;&#x6240;&#x4EE5;&#x4E0A;&#x9762;&#x7684;i2c_add_adapter()&#x662F;&#x5411;i2c&#x5B50;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x6CE8;&#x518C;&#xFF1F;</li>
+<li>&#x90A3;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981;&#x901A;&#x8FC7;<code>postcore_initcall(i2c_init);</code>&#x8FD9;&#x91CC;&#x9762;&#x8FDB;&#x884C;<code>bus_register</code>&#xFF0C;&#x5F88;&#x660E;&#x663E;&#x8FD9;&#x91CC;&#x53EA;&#x6267;&#x884C;&#x4E86;&#x4E00;&#x6B21;&#xFF0C;&#x6240;&#x4EE5;&#x5BF9;&#x4E8E;kernel&#x6765;&#x8BF4;&#x53EA;&#x662F;&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x6761;bus&#xFF1F;</li>
+</ul>
+</li>
+<li><code>i2c_adapter</code>&#x5BF9;&#x5E94;&#x7269;&#x7406;&#x8BBE;&#x5907;&#xFF08;&#x82AF;&#x7247;&#x5185;&#x7684;i2c&#x63A7;&#x5236;&#x5668;&#xFF09;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x6709;<code>struct list_head userspace_clients;</code>&#x8FD9;&#x4E2A;&#x94FE;&#x8868;&#x662F;&#x6240;&#x6709;&#x63A5;&#x5728;&#x8FD9;&#x4E2A;adapter&#x4E0B;&#x7684;&#x8BBE;&#x5907;&#xFF0C;&#x5373;&#x8FD9;&#x4E2A;i2c&#x603B;&#x7EBF;&#x4E0A;&#x7684;&#x6240;&#x6709;<code>i2c_client</code></li>
+</ul>
+</li>
+<li><code>static int i2c_register_adapter(struct i2c_adapter *adap)</code><ul>
+<li><code>res = device_register(&amp;adap-&gt;dev);</code></li>
+<li><code>of_i2c_register_devices(adap);</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x73B0;&#x5728;&#x4E24;&#x4E2A;&#x6587;&#x6863;&#x5BF9;&#x4E8E; i2c_client&#x7684;&#x6CE8;&#x518C; &#x6709;&#x4E24;&#x4E2A;&#x8BF4;&#x6CD5;</p>
+<ul>
+<li><a href="https://blog.csdn.net/snowwupl/article/details/9014977" target="_blank">https://blog.csdn.net/snowwupl/article/details/9014977</a> &#x8BF4;<code>i2c_scan_static_board_info()</code>&#x662F;&#x91CD;&#x70B9;</li>
+<li><a href="https://www.eet-china.com/mp/a34101.html" target="_blank">https://www.eet-china.com/mp/a34101.html</a> &#x8BF4;&#x662F;<code>of_i2c_register_devices(adap);</code></li>
+</ul>
+<h4 id="621-bus&#x6CE8;&#x518C;">6.2.1. bus&#x6CE8;&#x518C;</h4>
+<ul>
+<li><a href="https://zhuanlan.zhihu.com/p/363569568" target="_blank">https://zhuanlan.zhihu.com/p/363569568</a></li>
+<li><a href="https://sites.google.com/site/myembededlife/Home/s3c2440/i2c-and-core_initcall" target="_blank">https://sites.google.com/site/myembededlife/Home/s3c2440/i2c-and-core_initcall</a></li>
+<li><a href="https://blog.csdn.net/u010961173/article/details/90770615" target="_blank">https://blog.csdn.net/u010961173/article/details/90770615</a></li>
+</ul>
+<p><code>drivers/i2c/i2c-core-base.c</code>&#x662F; i2c &#x5B50;&#x7CFB;&#x7EDF;&#x7684;&#x6838;&#x5FC3;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;bus</p>
+<ul>
+<li><code>postcore_initcall(i2c_init);</code>&#x58F0;&#x660E;initcall<ul>
+<li><code>static int __init i2c_init(void)</code><ul>
+<li><code>retval = bus_register(&amp;i2c_bus_type);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x6700;&#x65E9;&#x6267;&#x884C;&#x7684;&#xFF0C;&#x5728;<code>start_kernel()</code>&#x4E2D;&#x6839;&#x636E;initcall&#x76F8;&#x5173;&#x8C03;&#x7528;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x7684;&#xFF0C;
+&#x53EF;&#x80FD;&#x751A;&#x81F3;&#x662F;&#x8DDF;platform&#x603B;&#x7EBF;&#x662F;&#x4E00;&#x5757;&#x6CE8;&#x518C;&#x7684;&#xFF1F;</p>
+<h4 id="622-i2cdriver&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;">6.2.2. i2c_driver&#x5411;&#x5185;&#x6838;&#x6CE8;&#x518C;</h4>
+<ul>
+<li><code>module_i2c_driver(ov5645_i2c_driver);</code><ul>
+<li><code>return i2c_add_driver(&amp;(ov5645_i2c_driver) );</code><ul>
+<li><code>i2c_register_driver(THIS_MODULE, driver)</code><ul>
+<li><code>res = driver_register(&amp;driver-&gt;driver);</code><ul>
+<li><code>ret = bus_add_driver(drv);</code><ul>
+<li><code>error = driver_attach(drv);</code><ul>
+<li><code>return bus_for_each_dev(drv-&gt;bus, NULL, drv, __driver_attach);</code><ul>
+<li><code>error = fn(dev, data);</code> fn&#x662F;&#x51FD;&#x6570;&#x6307;&#x9488;&#xFF0C;&#x503C;&#x4E3A;&#x4F20;&#x5165;&#x7684;&#x5F62;&#x53C2;<code>__driver_attach</code><ul>
+<li><code>ret = driver_match_device(drv, dev);</code><ul>
+<li><code>return drv-&gt;bus-&gt;match ? drv-&gt;bus-&gt;match(dev, drv) : 1;</code> &#x8C03;&#x7528;&#x7684;&#x662F;i2c_bus_type-&gt;match,&#x5373;<code>i2c_device_match()</code></li>
+</ul>
+</li>
+<li><code>driver_probe_device(drv, dev);</code><ul>
+<li><code>ret = really_probe(dev, drv);</code><ul>
+<li><code>ret = drv-&gt;probe(dev);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>error = driver_create_file(drv, &amp;driver_attr_uevent);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><code>drivers/media/i2c/ov5645.c</code>&#x4E2D;&#x6709;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> <span class="hljs-keyword">struct</span> i2c_driver ov5645_i2c_driver = {
+  .driver = {
+    .of_match_table = of_match_ptr(ov5645_of_match),
+    .name  = <span class="hljs-string">&quot;ov5645&quot;</span>,
+  },
+  .probe  = ov5645_probe,
+  .remove = ov5645_remove,
+  .id_table = ov5645_id,
+};
+
+module_i2c_driver(ov5645_i2c_driver);
+</code></pre>
+<p><code>module_i2c_driver</code>&#x5B8F;&#x662F;<code>include/linux/i2c.h</code>&#x63D0;&#x4F9B;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x5C55;&#x5F00;&#x4E4B;&#x540E;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> __<span class="hljs-function">init <span class="hljs-title">ov5645_i2c_driver_init</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span>
+</span>{
+  <span class="hljs-keyword">return</span> i2c_add_driver(&amp;(ov5645_i2c_driver) ); 
+}
+module_init(ov5645_i2c_driver_init); 
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> __<span class="hljs-function"><span class="hljs-built_in">exit</span> <span class="hljs-title">ov5645_i2c_driver_exit</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span>
+</span>{ 
+  i2c_del_driver(&amp;(ov5645_i2c_driver) ); 
+} 
+module_exit(ov5645_i2c_driver_exit);
+</code></pre>
+<p>insmod&#x548C;rmmod&#x4F1A;&#x7528;&#x5230;module_init&#x548C;module_exit</p>
+<p><code>i2c_add_driver</code>&#x4E5F;&#x662F;&#x5B8F;&#xFF0C;&#x6700;&#x7EC8;&#x8C03;&#x7528;&#x7684;&#x662F;<code>int i2c_register_driver(struct module *, struct i2c_driver *);</code></p>
+<!-- i2c_register_driver函数中对比i2c_drive->driver->of_match_table->compatible和i2c_client->name -->
+<h4 id="623-&#x6784;&#x5EFA;i2cclient">6.2.3. &#x6784;&#x5EFA;i2c_client</h4>
+<ul>
+<li>&#x5728;&#x6709;&#x8BBE;&#x5907;&#x6811;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;i2c_client&#x7684;&#x751F;&#x6210;&#x662F;&#x8981;&#x5728;&#x63A7;&#x5236;&#x5668;&#x9A71;&#x52A8;adapter&#x6CE8;&#x518C;&#x60C5;&#x51B5;&#x4E0B;&#x4ECE;&#x8BBE;&#x5907;&#x6811;&#x4E2D;&#x679A;&#x4E3E;&#x51FA;&#x6765;&#x7684;&#x3002;</li>
+<li>i2c&#x63A7;&#x5236;&#x5668;&#x6709;&#x5F88;&#x591A;&#x79CD;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x5382;&#x5BB6;&#x90FD;&#x4F1A;&#x8BBE;&#x8BA1;&#x81EA;&#x5DF1;&#x7279;&#x6709;&#x7684;i2c&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x4F46;&#x662F;&#x4E0D;&#x8BBA;&#x54EA;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x8C03;&#x7528; <code>i2c_register_adapter()</code>&#x6CE8;&#x518C;&#x63A7;&#x5236;&#x5668;&#x9A71;&#x52A8;&#x3002;<ul>
+<li><code>drivers/i2c/busses/i2c-riic.c</code></li>
+</ul>
+</li>
+</ul>
+<p>&#x8C03;&#x7528;&#x6808;</p>
+<ul>
+<li><code>static int riic_i2c_probe(struct platform_device *pdev)</code><ul>
+<li><code>ret = i2c_add_adapter(adap);</code><ul>
+<li><code>return i2c_register_adapter(adapter);</code><ul>
+<li><code>of_i2c_register_devices(adap);</code><ul>
+<li>&#x904D;&#x5386;&#x5B50;&#x8282;&#x70B9;<code>client = of_i2c_register_device(adap, node);</code><ul>
+<li><code>ret = of_i2c_get_board_info(&amp;adap-&gt;dev, node, &amp;info);</code><ul>
+<li><code>if (of_modalias_node(node, info-&gt;type, sizeof(info-&gt;type)) &lt; 0) {</code>&#x901A;&#x8FC7;compatibles&#x83B7;&#x53D6;name</li>
+<li><code>ret = of_property_read_u32(node, &quot;reg&quot;, &amp;addr);</code>&#x83B7;&#x53D6;reg&#xFF0C;&#x5373;i2c&#x5730;&#x5740;</li>
+</ul>
+</li>
+<li><code>client = i2c_new_device(adap, &amp;info);</code> &#x7533;&#x8BF7;&#x5185;&#x5B58;<ul>
+<li><code>status = device_register(&amp;client-&gt;dev);</code> &#x5411;&#x5185;&#x6838;&#x4E2D;&#x6CE8;&#x518C;device<ul>
+<li><code>return device_add(dev);</code><ul>
+<li><code>error = bus_add_device(dev);</code></li>
+<li><code>bus_probe_device(dev);</code><ul>
+<li><code>device_initial_probe(dev);</code><ul>
+<li><code>__device_attach(dev, true);</code><ul>
+<li><code>ret = bus_for_each_drv(dev-&gt;bus, NULL, &amp;data, __device_attach_driver);</code><ul>
+<li><code>error = fn(drv, data);</code> fn&#x662F;&#x4F20;&#x8FDB;&#x7684;&#x51FD;&#x6570;&#x6307;&#x9488;&#xFF0C;<code>__device_attach_driver</code><ul>
+<li><code>return driver_probe_device(drv, dev);</code><ul>
+<li><code>ret = really_probe(dev, drv);</code><ul>
+<li><code>ret = drv-&gt;probe(dev);</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x5728;<code>i2c_register_adapter()</code>&#x4E2D;&#x4F1A;&#x5148;&#x904D;&#x5386;i2c&#x7684;&#x8BBE;&#x5907;&#x6811;&#x8282;&#x70B9;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x4F1A;&#x5F97;&#x5230;i2c&#x63A7;&#x5236;&#x5668;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x5404;&#x79CD;&#x8BBE;&#x5907;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x521B;&#x5EFA;<code>create pre-declared device nodes</code></p>
+<p>&#x6240;&#x4EE5;&#x5728;i2c adapter&#x6CE8;&#x518C;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x597D;device&#x4E86;&#xFF0C;&#x5728;i2c&#x9A71;&#x52A8;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;</p>
+<pre><code class="lang-c"><span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">i2c_register_adapter</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> i2c_adapter *adap)</span>
+</span>{
+  <span class="hljs-keyword">int</span> res = -EINVAL;
+
+  <span class="hljs-comment">/* Can&apos;t register until after driver model init */</span>
+  <span class="hljs-keyword">if</span> (WARN_ON(!is_registered)) {
+    res = -EAGAIN;
+    <span class="hljs-keyword">goto</span> out_list;
+  }
+
+  <span class="hljs-comment">/* Sanity checks */</span>
+  <span class="hljs-keyword">if</span> (WARN(!adap-&gt;name[<span class="hljs-number">0</span>], <span class="hljs-string">&quot;i2c adapter has no name&quot;</span>))
+    <span class="hljs-keyword">goto</span> out_list;
+
+  <span class="hljs-keyword">if</span> (!adap-&gt;algo) {
+    pr_err(<span class="hljs-string">&quot;adapter &apos;%s&apos;: no algo supplied!\n&quot;</span>, adap-&gt;name);
+    <span class="hljs-keyword">goto</span> out_list;
+  }
+
+  <span class="hljs-keyword">if</span> (!adap-&gt;lock_ops)
+    adap-&gt;lock_ops = &amp;i2c_adapter_lock_ops;
+
+  rt_mutex_init(&amp;adap-&gt;bus_lock);
+  rt_mutex_init(&amp;adap-&gt;mux_lock);
+  mutex_init(&amp;adap-&gt;userspace_clients_lock);
+  INIT_LIST_HEAD(&amp;adap-&gt;userspace_clients);
+
+  <span class="hljs-comment">/* Set default timeout to 1 second if not already set */</span>
+  <span class="hljs-keyword">if</span> (adap-&gt;timeout == <span class="hljs-number">0</span>)
+    adap-&gt;timeout = HZ;
+
+  <span class="hljs-comment">/* register soft irqs for Host Notify */</span>
+  res = i2c_setup_host_notify_irq_domain(adap);
+  <span class="hljs-keyword">if</span> (res) {
+    pr_err(<span class="hljs-string">&quot;adapter &apos;%s&apos;: can&apos;t create Host Notify IRQs (%d)\n&quot;</span>,
+           adap-&gt;name, res);
+    <span class="hljs-keyword">goto</span> out_list;
+  }
+
+  dev_set_name(&amp;adap-&gt;dev, <span class="hljs-string">&quot;i2c-%d&quot;</span>, adap-&gt;nr);
+  adap-&gt;dev.bus = &amp;i2c_bus_type;
+  adap-&gt;dev.type = &amp;i2c_adapter_type;
+  res = device_register(&amp;adap-&gt;dev);
+  <span class="hljs-keyword">if</span> (res) {
+    pr_err(<span class="hljs-string">&quot;adapter &apos;%s&apos;: can&apos;t register device (%d)\n&quot;</span>, adap-&gt;name, res);
+    <span class="hljs-keyword">goto</span> out_list;
+  }
+
+  res = of_i2c_setup_smbus_alert(adap);
+  <span class="hljs-keyword">if</span> (res)
+    <span class="hljs-keyword">goto</span> out_reg;
+
+  dev_dbg(&amp;adap-&gt;dev, <span class="hljs-string">&quot;adapter [%s] registered\n&quot;</span>, adap-&gt;name);
+
+  pm_runtime_no_callbacks(&amp;adap-&gt;dev);
+  pm_suspend_ignore_children(&amp;adap-&gt;dev, <span class="hljs-literal">true</span>);
+  pm_runtime_enable(&amp;adap-&gt;dev);
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> CONFIG_I2C_COMPAT</span>
+  res = class_compat_create_link(i2c_adapter_compat_class, &amp;adap-&gt;dev,
+               adap-&gt;dev.parent);
+  <span class="hljs-keyword">if</span> (res)
+    dev_warn(&amp;adap-&gt;dev,
+       <span class="hljs-string">&quot;Failed to create compatibility class link\n&quot;</span>);
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+
+  i2c_init_recovery(adap);
+
+  <span class="hljs-comment">/* create pre-declared device nodes */</span>
+  of_i2c_register_devices(adap);    <span class="hljs-comment">//&#x8FD9;&#x91CC;&#x904D;&#x5386;i2c&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x5206;&#x522B;&#x4E3A;`struct i2c_client*`&#x7533;&#x8BF7;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#xFF0C;&#x586B;&#x5145;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x5230;i2c_client</span>
+  i2c_acpi_install_space_handler(adap);
+  i2c_acpi_register_devices(adap);
+
+  <span class="hljs-keyword">if</span> (adap-&gt;nr &lt; __i2c_first_dynamic_bus_num)
+    i2c_scan_static_board_info(adap);
+
+  <span class="hljs-comment">/* Notify drivers */</span>
+  mutex_lock(&amp;core_lock);
+  bus_for_each_drv(&amp;i2c_bus_type, <span class="hljs-literal">NULL</span>, adap, __process_new_adapter);
+  mutex_unlock(&amp;core_lock);
+
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+
+out_reg:
+  init_completion(&amp;adap-&gt;dev_released);
+  device_unregister(&amp;adap-&gt;dev);
+  wait_for_completion(&amp;adap-&gt;dev_released);
+out_list:
+  mutex_lock(&amp;core_lock);
+  idr_remove(&amp;i2c_adapter_idr, adap-&gt;nr);
+  mutex_unlock(&amp;core_lock);
+  <span class="hljs-keyword">return</span> res;
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Auth.html" class="navigation navigation-prev " aria-label="Previous page: Auth UID加密">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Linux-reset-framework.html" class="navigation navigation-next " aria-label="Next page: Linux-reset-framework">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Linux-device-model","level":"1.3.6","depth":2,"next":{"title":"Linux-reset-framework","level":"1.3.7","depth":2,"path":"Linux/Linux-reset-framework.md","ref":"./Linux/Linux-reset-framework.md","articles":[]},"previous":{"title":"Auth UID加密","level":"1.3.5","depth":2,"path":"Linux/Auth.md","ref":"./Linux/Auth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","theme-simple@git+https://github.com/plugins-zander/gitbook-plugin-theme-simple.git","search-pro@git+https://github.com/plugins-zander/gitbook-plugin-search-pro.git","splitter@git+https://github.com/plugins-zander/gitbook-plugin-splitter.git","chapter-fold@git+https://github.com/plugins-zander/gitbook-plugin-chapter-fold.git","code"],"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"search-pro":{},"splitter":{},"chapter-fold":{},"code":{"copyButtons":true},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-simple":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Liyi","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Notes","language":"zh-hans","gitbook":"3.2.3","description":"A new life"},"file":{"path":"Linux/Linux-device-model.md","mtime":"2022-12-02T07:39:13.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-12-02T08:02:06.263Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
